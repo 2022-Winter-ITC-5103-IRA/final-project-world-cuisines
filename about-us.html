@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>World Cuisines</title>
+  <meta charset="utf-8" />
+  <link href="styles/main.css" rel="stylesheet" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="icon" href="#">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/new-logo.jpg" alt="logo"></a>
+        </div>
+        <div class="navbar">
+
+          <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Recipe.html">Recipe</a></li>
+            <li><a href="Chef.html">Chef</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+        HERE GOES CONTENT
+
+    </main>
+    <footer>
+      <div class="footer-wrap">
+        <div class="About_US">
+          <h3>About Us</h3>
+          <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new receipe that world can explore.</p>
+          <p><a href="#" class="readmore">Read more</a></p>
+        </div>
+        <div class="navi">
+          <h3>&emsp;&emsp;Navigation</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">All Receipes</a></li>
+            <li><a href="#">Our Chef's</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Address</h3>
+          <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+        </div>
+        <div class="phone">
+          <h3>Telephone</h3>
+          <p>
+            <a href="#">+1 234 5678 910</a> <br>
+            <a href="#">+2 234 5678 910</a>
+          </p>
+        </div>
+        <div class="newsletter">
+          <h3>Join our newsletter</h3>
+          <p>Be the first to know our latest updates and news!</p>
+          <form action="#" method="">
+            <div class="form-subscribe">
+              <input type="email" placeholder="Enter your email">
+              <input type="submit" value="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>      
+    </footer> 
+    <script>
+      var navList = document.getElementById("nav-lists");
+      function Show() {
+        navList.classList.add("_Menus-show");
+      }
+
+      function Hide() {
+        navList.classList.remove("_Menus-show");
+      }
+    </script>
+
+
+  </div>
+</body>
+
+</html>
