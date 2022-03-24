@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Darshan-CSS/Contact_Form.css">
+    <title>Contact_FORM</title>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="Darshan-Images/Web_LOGO.jpeg" alt="logo"></a>
+                </div>
+                <div class="navbar">
+                    <div class="icon-bar" onclick="Show()">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <ul id="nav-lists">
+                        <li class="close"><span onclick="Hide()">×</span></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Recipe.html">Recipe</a></li>
+                        <li><a href="Chef.html">Chef</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>                     
+        <main>
+            <div class="page-desc">
+                <h1>Connect with Us</h1>
+                <p>We would love to reply your queries and help you move ahead in life.
+                    Please always feel free to get in touch with us.</p>
+                <div class="container">
+                    <div class="content-left">
+                        <h2>Get in Touch</h2>
+                        <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                            <div class="row">
+                                <div class="row-group">
+                                    <label class="label" for="name">First Name</label>
+                                    <input type="text" class="input-control" name="name" id="name" placeholder="Enter FirstName">
+                                </div>
+                                <div class="row-group">
+                                    <label class="label" for="name">Last Name</label>
+                                    <input type="text" class="input-control" name="name" id="name" placeholder="Enter LastName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row-group">
+                                    <label class="label" for="email">Email Address</label>
+                                    <input type="email" class="input-control" name="email" id="email" placeholder="Enter Email">
+                                </div>
+                                <div class="row-group">
+                                    <label class="label" for="subject">Subject</label>
+                                    <input type="text" class="input-control" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <label class="label" for="#">Message</label>
+                            <textarea name="message" class="input-control" id="message" cols="30" rows="4" placeholder="Enter Your Message"></textarea>
+                            <button type="submit">Send Message</button>                                
+                        </form>
+                    </div>
+                    <div class="right">
+                        <div class="content-right">
+                            <h2>Let's get in touch</h2>
+                            <table>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>contactus@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>+1 123 456 7890</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non nisi semper, varius lorem eu, facilisis massa. Proin suscipit sapien non tempor cursus.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrap">
+              <div class="About_US">
+                <h3>About Us</h3>
+                <p>A Receipe is useful process in which anyone can cook just being interested in cooking and making some new receipe that world can explore.</p>
+                <p><a href="#" class="readmore">Read more</a></p>
+              </div>
+              <div class="navi">
+                <h3>Navigation</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">All Receipes</a></li>
+                  <li><a href="#">Our Chef's</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="address">
+                <h3>Address</h3>
+                <address>273 South Riverview Rd. <br> New York, NY 10011</address>
+              </div>
+              <div class="phone">
+                <h3>Telephone</h3>
+                <p>
+                  <a href="#">+1 234 5678 910</a> <br>
+                  <a href="#">+2 234 5678 910</a>
+                </p>
+              </div>
+              <div class="newsletter">
+                <h3>Join our newsletter</h3>
+                <p>Be the first to know our latest updates and news!</p>
+                <form action="#" method="">
+                  <div class="form-subscribe">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="submit" value="Subscribe" class="submit">
+                  </div>
+                </form>
+              </div>
+            </div>      
+        </footer>   
+        <script src="js/app.js"></script>
+    </body>
+</html>
