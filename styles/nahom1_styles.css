@@ -179,10 +179,31 @@ aside {
     padding-left: 360px;
 }
 
+#form {
+  margin-left: 27px;
+}
+
+#fullName {
+  margin-left: 13px;
+}
+
+#email {
+  margin-left: 38px;
+}
+
+#telephone {
+  margin-left: 12px;
+}
+
+#date {
+  margin-left: 52px;
+}
+
 
 footer {
     border: 3px solid grey;
     font-size: 15px;
+    margin-top: 104px;
 }
 .footer-wrap{
     padding:0px 20px;
