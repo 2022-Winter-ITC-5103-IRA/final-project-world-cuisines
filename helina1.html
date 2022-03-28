@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="helinastyled1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Burrito Bowl</title>
 </head>
 
-<body>
+<body onload="window.scroll(0,0);">
     <header id="myHeader">
         <div class="header" id="sticky">
             <div class="container">
                 <div class="logo">
-                    <a href="#"><img src="images/helina_images/logo.jpeg" alt="logo"></a>
+                    <a href="#"><img src="helina_images/logo.jpeg" alt="logo"></a>
                 </div>
-                <div class="navbar">
+                <div class="navbar" >
                     <div class="icon-bar" onclick="Show()">
                         <i></i>
                         <i></i>
@@ -34,16 +34,26 @@
                         <li><a href="Contact.html">Contact Us</a></li>
                     </ul>
                 </div>
+                <button id="hamButton" class="fa fa-bars fa-3x" >
             </div>
         </div>
     </header>
+
     <div class="content">
-        <!-- <h3>On Scroll Sticky Header</h3> -->
-        <img src="images/helina_images/mexican food background.jpg" width="100%">
-        <button class="btn1 tt1" onclick="HideIngredient()"><img src="images/helina_images/ingredients.png"><span class="tooltiptext">Check this out for detailed
-                recipe..</span>
+        <img src="helina_images/mexican food background.jpg">
+        <!-- <div id="rating">
+            <h2>User Rating</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div> -->
+        <button class="btn1 tt1" onclick="btnScroll(0,600)">
+            <img src="helina_images/ingredients.png">
+            <span class="tooltiptext">Check this out for detailed recipe..</span>
         </button>
-        <div id="ingredientsCard" style="display: none;">
+        <div id="ingredientsCard1">
             <h1>Ingredients</h1>
             <div id="innerCard1">
                 <ul>
@@ -55,90 +65,78 @@
                     <li>2 Roma tomatoes, diced</li>
                     <li>1 avocado, halved, seeded, peeled and diced</li>
                     <li>2 tablespoons chopped fresh cilantro leaves</li>
+                    <img src="helina_images/healthy burrito bowl.jpg">
+                    <div id="iC1">
+                        <h3>For the chipotle cream sauce</h3>
+                        <li>1 cup sour cream</li>
+                        <li>1 tablespoon chipotle paste*</li>
+                        <li>1 clove garlic, pressed</li>
+                        <li>Juice of 1 lime</li>
+                        <li>1/4 teaspoon salt, or more, to taste</li>
+                    </div>
                 </ul>
             </div>
-            <button class="closeBtn1" onclick="CloseButton()"><i class="fa fa-solid fa-close fa-2x"></i>
-            </button>
         </div>
-
-        <button class="btn2 tt2"><i class="fa fa-solid fa-fire fa-2x"></i><span class="tooltiptext">Estimated
-                calorie</span>
+        <button class="btn2 tt2" onclick="btnScroll(0,1000)">
+            <i class="fa fa-solid fa-fire fa-2x"></i>
+            <span class="tooltiptext">Estimated calorie</span>
+        </button>
+        <hr>
+        <div id="ingredientsCard2">
+            <div id="innerCard2">
+                <h1>Nutrition Facts</h1>
+                <h3>Serving Size</h3>
+                <h3>Servings Per Container 6</h3>
+                <hr>
+                <h4>Amount Per Serving</h4>
+                <hr>
+                <h3> Calories 371.9 &emps; Calories from Fat 102.6 </h3>
+                <hr>% Daily Value*
+                <hr>
+                <h4>Total Fat 11.4g &emps;&emps;18%</h4>
+                <hr>
+                <h4>Saturated Fat 4.2g &emps;&emps;21%</h4>
+                <hr>
+                <h4>Trans Fat 0g</h4>
+                <hr>
+                <h4>Cholesterol 13.4mg &emps;&emps;4%</h4>
+                <hr>
+                <h4>Sodium 790mg &emps;&emps;33%</h4>
+                <hr>
+                <h4>Total Carbohydrate 58.9g &emps;&emps;20%</h4>
+                <hr>
+                <h4> Dietary Fiber 10.8g &emps;&emps;43%</h4>
+                <hr>
+                <h4>Sugars 4.8g &emps;&emps;</h4>
+                <hr>
+                <h4> Protein 12.7g &emps;&emps;25%</h4>
+                <hr>
+                <h4>*Percent Daily Values are based on a 2,000
+                    calorie diet.Your daily values may be higher or lower
+                    depending on your calorie needs. </h4>
+            </div>
+        </div>
+        <button class="btn3 tt3" onclick="btnScroll(0,1500)">
+            <i class="fa fa-solid fa-book fa-2x"></i>
+            <span class="tooltiptext">Steps to get the recipe</span>
         </button>
 
-
-        <button class="btn3 tt3"><i class="fa fa-solid fa-book fa-2x"></i><span class="tooltiptext">Steps to get the
-                recipe</span>
-        </button>
-
+        <div id="ingredientsCard3">
+            <hr>
+            <h1>Directions</h1>
+            <div id="innerCard3">
+                <ul>
+                    <li>To make the chipotle cream sauce, whisk together sour cream, chipotle paste, garlic, lime juice
+                        and salt; set aside.</li>
+                    <li>In a large saucepan of 1 1/2 cups water, cook rice according to package instructions; let cool
+                        and stir in salsa; set aside.</li>
+                    <li>To assemble the bowls, divide rice mixture into serving bowls; top with lettuce, corn, black
+                        beans, tomatoes, avocado and cilantro.</li>
+                    <li>Serve immediately, drizzled with chipotle cream sauce.</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-
-    <!-- <span class="heading">User Rating</span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star checked"></span>
-    <span class="fa fa-star"></span>
-    <p>4.1 average based on 254 reviews.</p>
-    <hr style="border:3px solid #f1f1f1">
-
-    <div class="row">
-        <div class="side">
-            <div>5 star</div>
-        </div>
-        <div class="middle">
-            <div class="bar-container">
-                <div class="bar-5"></div>
-            </div>
-        </div>
-        <div class="side right">
-            <div>150</div>
-        </div>
-        <div class="side">
-            <div>4 star</div>
-        </div>
-        <div class="middle">
-            <div class="bar-container">
-                <div class="bar-4"></div>
-            </div>
-        </div>
-        <div class="side right">
-            <div>63</div>
-        </div>
-        <div class="side">
-            <div>3 star</div>
-        </div>
-        <div class="middle">
-            <div class="bar-container">
-                <div class="bar-3"></div>
-            </div>
-        </div>
-        <div class="side right">
-            <div>15</div>
-        </div>
-        <div class="side">
-            <div>2 star</div>
-        </div>
-        <div class="middle">
-            <div class="bar-container">
-                <div class="bar-2"></div>
-            </div>
-        </div>
-        <div class="side right">
-            <div>6</div>
-        </div>
-        <div class="side">
-            <div>1 star</div>
-        </div>
-        <div class="middle">
-            <div class="bar-container">
-                <div class="bar-1"></div>
-            </div>
-        </div>
-        <div class="side right">
-            <div>20</div>
-        </div>
-    </div> -->
     <footer>
         <div class="footer-wrap">
             <div class="About_US">
