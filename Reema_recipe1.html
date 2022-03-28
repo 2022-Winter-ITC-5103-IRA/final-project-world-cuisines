@@ -2,8 +2,8 @@
     <head>
         <meta charset="UTF-8"> <!-- used to tell the browser to use the UTF-8 character encoding, which is a method of converting characters into machine-readable code-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Reema_recipe1.css"> <!--used to link the css file related to this html code-->
-        <link rel="icon" href="Reema_images/logo.jpeg">
+        <link rel="stylesheet" href="Reema_CSS/Reema_recipe1.css"> <!--used to link the css file related to this html code-->
+        <link rel="icon" href="Reema_images/logo.jpeg"> <!--used to show the icon in the tab-->
         <title>Mint & basil griddled peach salad</title> <!--Name of the Page-->
     </head>
     <!--Body of the program-->
@@ -16,17 +16,19 @@
               </div>
               <div class="navbar">
       
-                <div class="icon-bar" onclick="Show()">
+                <div class="icon-bar" onclick="Show()"> <!--Calling the show function which is in the javascript file-->
                   <i></i>
                   <i></i>
                   <i></i>
                 </div>
       
                 <ul id="nav-lists">
-                  <li class="close"><span onclick="Hide()">×</span></li>
+                  <li class="close"><span onclick="Hide()">×</span></li> <!--Calling the hide function which is in the javascript file-->
+                  <!--This is the header of the page and these five are the options available in the header menu-->
                   <li><a href="home.html">Home</a></li>
                   <li><a href="about-us.html">About</a></li>
                   <li>
+                    <!--Here, I have created 2-tier menu -->
                     <a href="Reema_recipe1.html">Recipe</a>
                     <ul>
                       <li><a href="Reema_recipe1.html">Mint and basil griddled peach salad</a></li>
@@ -44,11 +46,13 @@
         <main>
           <h1>Mint & basil griddled peach salad</h1>
           <img src="Reema_images/salad2.jpg" alt="Photo of Salad" id="img3">
+          <!--Fieldset is used to make a box for a particular items-->
+          <!--This fieldset is for displaying the similar recipes like this-->
           <fieldset id="similar">
             <label for="Similar">Similar Recipes</label></br>
             <figure>
               <img src="Reema_images/salad_main.jpg">
-              <figcaption>
+              <figcaption> <!--figcaption is used to give the name of the figure-->
                 <a href="Reema_recipe2.html"> Green salad with Cherries</a> 
               </figcaption></br>
               <img src="Reema_images/salad3.jpg">
@@ -56,10 +60,10 @@
                 <a href="Reema_recipe3.html"> Turkey salad with grapes and walnuts</a> 
               </figcaption>
             </figure>
-
           </fieldset>
+          <!--This fieldset is for to give basic info about the recipe-->
           <fieldset id="details">
-            <legend>
+            <legend> <!--legend command is used to give the name of particular fieldset and it will print in between the border of that box-->
                <img src="Reema_images/clock.png" id="clock">
             </legend>
             <h3>Prep: 10 mins</h3>
@@ -78,6 +82,7 @@
             <img src="Reema_images/vegan.jpg" class="glutein">
             <h4> Vegan</h4>
           </div>
+          <!--Nutritions in this recipe as per the amount of items we can see in the ingredients list-->
           <h2 id="adjust">Nutritions per serve:</h2>
           <div class="box_ed">
             <p class="box">kcal</br>395</p>
@@ -89,6 +94,7 @@
             <p class="box">protein</br>10g</p>
             <p class="box">salt</br>0.7g</p>
           </div>
+          <!--Ingredients used in this recipe-->
           <h2>Ingredients</h2>
           <ul>
             <li>1 lime , zested and juiced</li>
@@ -103,6 +109,7 @@
             <li>½ x 60g pack rocket</li>
             <li>1 small avocado , stoned and sliced</li>
           </ul>
+          <!--Steps to prepare the recipe-->
           <div id="steps">
             <div id="step_start">
             <h2><img src="Reema_images/food.png" class="glutein">----------------------------------------------------------------------------------<img src="Reema_images/food.png" class="glutein"></h2>
@@ -115,14 +122,14 @@
           </div>
             <h2 class="boldFont">Would you like to receive an alert for the new receipes like this? </h2>
             <label for="myCheck">Yes</label> 
-            <input type="checkbox" id="myCheck" onclick="myFunction()">
+            <input type="checkbox" id="myCheck" onclick="myFunction()"> <!--calling the myfunction when checkbox is true-->
             <h2 class="boldFont">If you want to give any comments regarding this recipe, then please comment in following comment box.</h2>
             <h2 class="boldFont">Comment-box:</h2>
             <!--textarea is used to give some space to the user to enter some text-->
-            <textarea name="comments" id="comment"></textarea></br>
-            <input type="button" value="Submit" id="submit" onclick="Submit()" >
-
+            <textarea name="comments" id="comment"></textarea></br> <!--some text area is provided for the user to comment if they want to-->
+            <input type="button" value="Submit" id="submit" onclick="Submit()" > <!--when submit button will clicked, it will call the submit function from the javascript file-->
         </main>
+        <!--Footer of the page-->
         <footer>
           <div class="footer-wrap">
             <div class="About_US">
@@ -154,15 +161,18 @@
             <div class="newsletter">
               <h3>Join our newsletter</h3>
               <p>Be the first to know our latest updates and news!</p>
+              <!--form command is used for the subscription of the user-->
               <form action="#" method="">
                 <div class="form-subscribe">
-                  <input type="email" placeholder="Enter your email">
-                  <input type="submit" value="Subscribe">
+                  <!--as a input type, email is used to tell the user to enter e-main. it will accept certain structure of text such as @ because email id always have an @ sign-->
+                  <!--place holder is used to just display the information, It will be clear once user starts to write in the box-->
+                  <input type="email" placeholder="Enter your email"> 
+                  <input type="submit" value="Subscribe"> <!--using the submit type button, with the name subscribe-->
                 </div>
               </form>
             </div>
           </div>      
         </footer>
-        <script src="Reema_js/app.js"></script>
+        <script src="Reema_js/app.js"></script> <!--Javascript file is added here -->
     </body>
 </html>
