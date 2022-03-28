@@ -123,9 +123,6 @@ header{
   background-color: #ffbc04;
   height: 2px;
 }
-
-
-
 /* Styling aside ingredient part */
 aside{
     clear: both;
@@ -149,6 +146,7 @@ main{
     padding-left: 25%;
     height: fit-content;
     border: 2px solid grey;
+    padding-bottom: 40px;
 }
 #rec_desc img{
         height: 90%;
@@ -160,7 +158,32 @@ main img{
 .receipe{
     margin: 15px 45px;
 }
-
+/*Image-Slider*/
+#slider{
+   width: 400px;
+   height: 270px;
+   position: relative;
+   border: 1px solid white;
+   box-shadow: 0px 0px 5px 2px #ccc;
+}
+button{
+   padding: 20px;
+   display: none;
+   border: none;
+   background: #37f;
+   font-size: 30px;
+   color: white;
+   position: absolute;
+   top:45%;
+   cursor: pointer;
+}
+.next{
+  border-radius: 10px 0px 0px 10px;
+  margin-left: 352px;
+}
+.prew{
+  border-radius: 0px 10px 10px 0px;
+}
 /* Rating Designing */
 .rating-css {
     display: flex;
@@ -192,7 +215,6 @@ main img{
     transform: scale(0.8);
     transition: 0.3s ease;
 }  
-
 /* start of footer styling */
 footer {
     border: 2px solid grey;
@@ -315,6 +337,7 @@ footer .form-subscribe{
     main{
         clear: both;
         padding: 0% 10%;
+        padding-bottom: 20px;
     }
     #rec_desc img{
         margin: 0% 10%;
@@ -339,6 +362,15 @@ footer .form-subscribe{
     form .form-subscribe{
       margin-left: 0%;
     }
+    #ControlImage,#slider{
+      width: 300px;
+      height: 250px;
+    }
+    .next{
+      margin-left: 250px;
+    }
+    
+       
 }
 @media screen and (max-width:376px){
     nav{
@@ -362,6 +394,12 @@ footer .form-subscribe{
     footer .submit{
         margin-top: 10px;
         margin-left: 50px;
+    }
+    #ControlImage,#slider{
+      width: 250px;
+    }
+    .next{
+      margin-left: 200px;
     }
 }
 @media screen and (max-width:720px){
