@@ -1,12 +1,11 @@
-## Assignment Name: : Project List Task 7
+## Project Phase: Feature one
 
-## Name: Vishesh Makwana
-
-## Student Number: N01495694
+## Name: Helina Gandhi
+## ID: N01516558
 
 ## Tasks
 
-- [x] Layout with  HTML and CSS for your second project feature
+-Fully functional burrito bowl page is created using html,css and javascript.
 
 ## Leaning curve and challenges
 
@@ -14,6 +13,4 @@
 - Making website responsive
 - Making images responsive
 
-## Resources
- 
-- w3school
+
