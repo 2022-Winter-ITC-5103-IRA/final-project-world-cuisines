@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="helinastyled1.css">
+    <!--reference of cloudflare site is used for buttons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Burrito Bowl</title>
 </head>
-
+<!--window.scroll(0,0) is used for the onload event, it will redriect the page to the beginning-->
 <body onload="window.scroll(0,0);">
+    <!--sticky header is created(even if we scroll the header will remain fixed)-->
     <header id="myHeader">
         <div class="header" id="sticky">
             <div class="container">
                 <div class="logo">
+                    <!--Logo is placed here-->
                     <a href="#"><img src="helina_images/logo.jpeg" alt="logo"></a>
                 </div>
                 <div class="navbar" >
-                    <div class="icon-bar" onclick="Show()">
+                    <div class="icon-bar" >
                         <i></i>
                         <i></i>
                         <i></i>
                         <i></i>
                         <i></i>
                     </div>
+                    <!--navigation bars are created using a tag-->
                     <ul id="nav-lists">
-                        <li class="close"><span onclick="Hide()">×</span></li>
+                        <li class="close"><span >×</span></li>
                         <li><a href="home.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="Recipe.html">Recipe</a></li>
@@ -34,26 +37,49 @@
                         <li><a href="Contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <button id="hamButton" class="fa fa-bars fa-3x" >
-            </div>
+                <!-- button is used with a reference link and is set with 3x size-->
+                <button id="hamButton" class="fa fa-bars fa-3x" onclick="showMenu()">
+                </div>
         </div>
     </header>
-
     <div class="content">
+        <div id="LeftSlider" >
+            <!--hide button is created to hide the menu with an onclick event-->
+            <button onclick="hideMenu()">
+                <i class="fa fa-solid fa-close fa-3x"></i>
+            </button> 
+            <table>
+                <!--table row as tr, table data as td-->
+                <tr>
+                    <td><a href="home.html">Home</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="about.html">About</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="Recipe.html">Recipe</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="Chef.html">Chef</a></td>
+                </tr>
+                <tr><td><hr></td></tr>
+                <tr>
+                    <td><a href="Contact.html">Contact Us</a></td>
+                </tr>
+            </table>   
+        </div>
+        <!--body image is alloted using img src tag-->
         <img src="helina_images/mexican food background.jpg">
-        <!-- <div id="rating">
-            <h2>User Rating</h2>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-        </div> -->
-        <button class="btn1 tt1" onclick="btnScroll(0,600)">
+        <!--onscrollevent is called by passing an id into it so it will redirect it to the js function-->
+        <button class="btn1 tt1" onclick="scrollEvent('ingredientsCard1')">
             <img src="helina_images/ingredients.png">
             <span class="tooltiptext">Check this out for detailed recipe..</span>
         </button>
-        <div id="ingredientsCard1">
+        <!--Ingredients list is made by giving it a separate division-->
+        <div id="ingredientsCard1"  >
             <h1>Ingredients</h1>
             <div id="innerCard1">
                 <ul>
@@ -77,11 +103,14 @@
                 </ul>
             </div>
         </div>
-        <button class="btn2 tt2" onclick="btnScroll(0,1000)">
+        <!--onscrollevent is called -->
+        <button class="btn2 tt2" onclick="scrollEvent('ingredientsCard2')">
             <i class="fa fa-solid fa-fire fa-2x"></i>
+            <!--tooltip text means on hovering to the particular button a text will appear on its side-->
             <span class="tooltiptext">Estimated calorie</span>
         </button>
         <hr>
+        <!--This division  is created to represent the Calorie/Nutrients included in the food -->
         <div id="ingredientsCard2">
             <div id="innerCard2">
                 <h1>Nutrition Facts</h1>
@@ -116,11 +145,12 @@
                     depending on your calorie needs. </h4>
             </div>
         </div>
-        <button class="btn3 tt3" onclick="btnScroll(0,1500)">
+        <!--onscrollevent is called -->
+        <button class="btn3 tt3" onclick="scrollEvent('ingredientsCard3')">
             <i class="fa fa-solid fa-book fa-2x"></i>
             <span class="tooltiptext">Steps to get the recipe</span>
         </button>
-
+        <!--This division  is created to represent the method of making burritos(Direction) -->
         <div id="ingredientsCard3">
             <hr>
             <h1>Directions</h1>
@@ -137,6 +167,7 @@
             </div>
         </div>
     </div>
+    <!--footer is made here-->
     <footer>
         <div class="footer-wrap">
             <div class="About_US">
@@ -178,107 +209,9 @@
             </div>
         </div>
     </footer>
+    <!--javascript src is given using script tag-->
     <script src="helina1.js"></script>
-
 </body>
-
 </html>
 
 
-<!--
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styled1.css">
-        <title>Mexican dish</title>
-        
-    </head>
-    <body><header>
-        <div class="container">
-          <div class="logo">
-            <a href="#"><img src="logo.jpeg" alt="logo"></a>
-          </div>
-          <div class="navbar">
-            <div class="icon-bar" onclick="Show()">
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-            <ul id="nav-lists">
-              <li class="close"><span onclick="Hide()">×</span></li>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="Recipe.html">Recipe</a></li>
-              <li><a href="Chef.html">Chef</a></li>
-              <li><a href="Contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>        
-       <div class="mexi_food"> 
-            <h1>Mexican</h1>
-            <h2>Food Lover</h2>
-            <div id="square">
-                <ul> 
-                    <li>Fastest recepies</li>
-                    <li>Yummiest with fresh veggies</li>
-                    <li>Quick meal</li>
-                </ul>
-            </div>
-        </div>
-        <div class="topnav">
-            <form class="example" action="/action_page.php">
-                <input type="text" placeholder="Search Recepies..">
-            </form> 
-        </div>
-        <div class="items">
-            <div id="t_id">
-                <img src="tacos.jpg" id="tacos">
-                <p><b>History:</b>Tacos are thought to come from Mexico, long 
-                before the Spanish arrived. Ancient Mexicans used freshly made, 
-                soft, flat corn tortillas and gave them with fillings like fish
-                and cooked organs. It was a staple meal that provided vital nutrients
-                and energy to those who consumed it.
-                </p>
-            </div>
-            <div id="n_id">
-                <img src="nachos.jpg"id="nachos">
-                <p><b>History:</b>Nachos originated in the city of Piedras Negras, Coahuila, 
-                just over the border from Eagle Pass, Texas.[8][9] Ignacio "Nacho" Anaya 
-                created nachos at the Victory Club in 1940 when Mamie Finan, a regular 
-                customer, asked if Anaya could bring her and three other women a different 
-                snack than usual. 
-                </p>
-            </div>
-            <div id="m_id">    
-                <img src="mexi.jpg"id="mexi">
-                <p><b>History:</b>The basics of Mexican cuisine can be traced back to 7000 BCE,
-                    when Mexico and Central America had yet to be colonized. Back then indigenous 
-                    people roamed the area and survived by hunting animals and gathering plants. 
-                </p>
-            </div>
-            <div id="tm_id">
-                <img src="traditional-mexi.jpg"id="trad-mexi">
-                <p><b>History:</b>Today Mexican Cuisine is a nice blend of the indigenous and Spanish cuisine. 
-                    It is still based in beans, corn, tortillas, and chile peppers, but these are now usually 
-                    served with some sort of meat and cheese. Most dishes come with some sort of rice and spices 
-                    as well, a clear nod to the European influence. 
-                </p>
-            </div>
-        </div>
-        <div id="base_back">
-            <h2>Follow to know more</h2>
-            <h3>By clicking on the below handles</h3>
-            <a href="https://www.instagram.com/mad.mexican.food/?hl=en" target="_blank"><img src="insta.jpg" alt="instagram"></a>
-            <a href="https://www.facebook.com/MadMexicanFood/" target="_blank"><img src="facebook.jpg" alt="facebook"></a>
-            <a href="https://twitter.com/mexicanfood" target="_blank"><img src="twitter.png" alt="twitter"></a>
-        </div>
-        <footer>
-            Copyright &copy 2022 
-        </footer>
-    </body>
-</html>
--->
