@@ -1,48 +1,21 @@
-var navList = document.getElementById("nav-lists");
-function Show() {
-  navList.classList.add("_Menus-show");
+// this function will be called by clicking side button and will be redirected to the particluar division mentioned by giving id
+function scrollEvent(division){
+    const element = document.getElementById(division);
+    element.scrollIntoView({behavior: 'smooth', block:'center'});
 }
 
-function Hide() {
-  navList.classList.remove("_Menus-show");
+// onclicking the hamburger menu will be shown when a responsive screen is used
+function showMenu(){
+    var content= document.getElementById('LeftSlider');
+    if(window.getComputedStyle(content).display === 'none'){
+        content.style.display = 'block';   
+    }
 }
 
-function btnScroll(x,y){
-    window.scroll(x,y);
+// onclicking the close button menu will be hidden when a responsive screen is used
+function hideMenu(){
+    var content= document.getElementById('LeftSlider');
+    if(window.getComputedStyle(content).display === 'block'){
+        content.style.display = 'none';   
+    }
 }
-
-// function btn2(){
-//     window.scroll(0,1000);
-// }
-
-// function btn3(){
-//     window.scroll(0,1500);
-// }
-// var prevScrollpos = window.pageYOffset;
-// /* Get the header element and it's position */
-// var headerDiv = document.querySelector("header");
-// var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
-
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-
-//   /* if scrolling down, let it scroll out of view as normal */
-//   if (prevScrollpos >= currentScrollPos ){
-    
-//         document.querySelector(".header").style.opacity="1";
-//         document.querySelector(".header").style.backgroundColor="";
-//   }
-//   /* otherwise if we're scrolling up, fix the nav to the top */
-//   else{  
-   
-//       headerDiv.style.display='block';
-//       headerDiv.style.top = "0";
-//     //   document.querySelector(".header").style.backgroundColor = "skyblue";
-//     //   document.querySelector(".navbar").style.backgroundColor = "white";
-//       document.querySelector(".navbar").style.opacity="1";
-//       document.querySelector(".logo").style.opacity="1";
-//       document.querySelector(".header").style.opacity="1";
-//     }
-
-//   prevScrollpos = currentScrollPos;
-// }
