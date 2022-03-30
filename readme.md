@@ -1,16 +1,14 @@
 ## Project Phase: Feature one
 
-## Name: Helina Gandhi
-## ID: N01516558
+## Name: World Cuisines
 
 ## Tasks
 
--Fully functional burrito bowl page is created using html,css and javascript.
+-To merge all the html, css, images and js files of all the team members
 
 ## Leaning curve and challenges
 
-- Designing the layout of the webpage
-- Making website responsive
-- Making images responsive
+- Linking Correct css, js and images with corresponding html pages
+- Making sure css is not conflicting with other member's css
 
 
