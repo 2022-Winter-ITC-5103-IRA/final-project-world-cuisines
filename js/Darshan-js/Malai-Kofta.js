@@ -1,6 +1,6 @@
 // List of images store in array
-let myImagesArray = ["Darshan-Images/FinalKofta.jpg","Darshan-Images/Kofta1.jpg","Darshan-Images/Kofta2.jpg","Darshan-Images/Kofta3.jpg",
-                    "Darshan-Images/Kofta4.jpg","Darshan-Images/Paste1.jpg","Darshan-Images/Paste2.jpg","Darshan-Images/Paste3.jpg"];
+let myImagesArray = ["images/Darshan-Images/FinalKofta.jpg","images/Darshan-Images/Kofta1.jpg","images/Darshan-Images/Kofta2.jpg","images/Darshan-Images/Kofta3.jpg",
+                    "images/Darshan-Images/Kofta4.jpg","images/Darshan-Images/Paste1.jpg","images/Darshan-Images/Paste2.jpg","images/Darshan-Images/Paste3.jpg"];
 
 // Responsive Navigation Hamburgur Menu with show and hide function
 var navList = document.getElementById("nav-lists");
