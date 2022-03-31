@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/Darshan-CSS/Malai_Kofta.css">
     <title>Cooking Recipes</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
     <header>
@@ -120,19 +121,33 @@
           </li>
           <img src="images/Darshan-Images/Paste3.jpg" alt="Step9-11 Preparation Photo" class="receipe">
         </ol>
-      <div class="rating-css">
-        <div>Rate Receipe</div>
-        <div>
-          <input type="radio" name="rating" id="rating1">
-          <label for="rating1" class="fa fa-star"></label>
-          <input type="radio" name="rating" id="rating2">
-          <label for="rating2" class="fa fa-star"></label>
-          <input type="radio" name="rating" id="rating3">
-          <label for="rating3" class="fa fa-star"></label>
-          <input type="radio" name="rating" id="rating4">
-          <label for="rating4" class="fa fa-star"></label>
-          <input type="radio" name="rating" id="rating5">
-          <label for="rating5" class="fa fa-star"></label>
+      <!-- Rating Section -->
+      <div class="ratingcontainer">
+        <h4>Rate My Recipe</h4>
+        <div class="post">
+          <div class="text">Thanks for rating us!</div>
+          <div class="edit">EDIT</div>
+        </div>
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5">
+          <label for="rate-5" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-4">
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3">
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2">
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1">
+          <label for="rate-1" class="fas fa-star"></label>
+          <form action="#">
+            <header></header> <!--to show message -->
+            <div class="textarea">
+              <textarea class="message" cols="30" placeholder="Describe your experience..(Optional)"></textarea>
+            </div>
+            <div class="btn1">
+              <button type="submit">Post</button>
+            </div>
+          </form>
         </div>
       </div>
       <div id="slider">
