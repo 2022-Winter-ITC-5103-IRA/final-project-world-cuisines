@@ -33,21 +33,21 @@ function prewImage(){
 // script for auto image slider
 //setInterval(nextImage , 4000);
 
-      const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
-      const message = document.querySelector(".message");
-      const title = document.querySelector(".ratingcontainer h4");
-      btn.onclick = ()=>{
-        widget.style.display = "none";
-        post.style.display = "block";
-        message.value="";
-        title.style.display="none";
-        editBtn.onclick = ()=>{
-          widget.style.display = "block";
-          post.style.display = "none";
-          title.style.display="block";
-        }
-        return false;
-      }
+const btn = document.querySelector("button");
+const post = document.querySelector(".post");
+const widget = document.querySelector(".star-widget");
+const editBtn = document.querySelector(".edit");
+const message = document.querySelector(".message");
+const title = document.querySelector(".ratingcontainer h4");
+btn.onclick = ()=>{
+  widget.style.display = "none";
+  post.style.display = "block";
+  message.value="";
+  title.style.display="none";
+  editBtn.onclick = ()=>{
+      widget.style.display = "block";
+      post.style.display = "none";
+      title.style.display="block";
+  }
+  return false;
+}
