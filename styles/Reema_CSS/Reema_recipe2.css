@@ -7,14 +7,15 @@
 body 
 {
   font-family: sans-serif;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
-  margin-top: -2px;
-  background: linear-gradient(to top, white 0%, pink 50%);
+  background-color: #cccccc;
 }
 header
 {
   background-color: rgb(153, 38, 57);
+  position: fixed;
+  width: 100%;
 }
 .container 
 {
@@ -28,6 +29,7 @@ header
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  
 }
 .container .logo 
 {
@@ -123,16 +125,66 @@ header
   justify-content: space-between;
   cursor: pointer;
 }
+
 .container .navbar .icon-bar i 
 {
   background-color: #00499d;
   height: 2px;
 }
+
+
 #img3
 {
-    height: 300px;
-    width: 400px;
-    margin-top: 100px;   
+  
+    width: 100%;
+
+   
+} 
+
+.collapse {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapse:hover {
+  background-color: #555;
+}
+
+.collapse:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.p2:after {
+  content: "\2212";
+}
+
+.p2 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+#set
+{
+  background-color: #ffffff;
+  color: green;
+  font-size: large;
+  text-align: center;
+  padding-top: 100px;
+  
 }
 #start h1
 {
@@ -144,11 +196,12 @@ header
 {
     font-size: large;
 }
+
 main
 {
-    margin-top: -732px; 
     margin-left: 500px;   
     border-left: 2px solid black;
+    margin-top: -450px;
 }
 main div
 {
@@ -164,11 +217,10 @@ main div h3
 #p1
 {
     font-style: italic;
-    font-weight: 800;
-    font-size: xx-large;
-    margin-top: 100px;
-    margin-left: 150px;  
-    padding-left: 50px;
+    font-size: x-large;
+    margin-top: 50px;
+    
+    padding-left: 30px;
     color: rgb(74, 94, 3);
 }
 main img
@@ -188,8 +240,8 @@ main nav h1
 .p2
 {
     font-size: large;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin: 20px;
+
 }
 main nav
 {
@@ -221,22 +273,136 @@ h3
 {
     margin-left: 10px;
 }
-textarea 
+.emailID
 {
-    resize: none;
-    display : block;
-    padding : 10px;
-    margin  : 10px 0 0 -10px;
-    width   : 60%;
-    height  : 20%;
-    border-right: 1px solid;
-    margin-left: 30px;
+  display: block;
 }
-#submit
-{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 7px;
+.star{
+  position: relative;
+  width: 50%;
+  height: 250px;
+  padding: 20px 30px;
+  
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.star .post{
+  display: none;
+}
+.star .text{
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.star .edit{
+  position : absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.star .edit:hover{
+  text-decoration: underline;
+}
+.star .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.star form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus{
+  border-color: #444;
+}
+form .btn{
+  height: 45px;
+  width: 100%;
+  margin: 15px 100;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  position: initial;
+  top: 0%;
+  padding: 0%;
+}
+form .btn button:hover{
+  background: #1b1b1b;
 }
 footer {
   border: 3px solid grey;
