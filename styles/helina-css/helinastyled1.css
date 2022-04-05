@@ -177,7 +177,7 @@ body{
     #innerCard2{
         border: 10px solid transparent;
         padding: 15px;
-        border-image: url(helina_images/border_img.jpg) 30 stretch;  
+        border-image: url(images/helina_images/border_img.jpg) 30 stretch;  
         margin: 30px 30px 30px 300px;
         width:50%; 
         
