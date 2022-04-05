@@ -13,20 +13,19 @@ function Hide() {
 function myFunction() {
   var checkBox = document.getElementById("myCheck");
   // if checkbox is checked then one dialog box will be open and ask the user to enter their email id
-  if (checkBox.checked == true)
-  {
+  if (checkBox.checked == true) {
     prompt("Enter the email");
-  } 
+  }
 }
 
 // this function is used to clear the text area when submit button will be clicked
 function Submit() {
- window.alert("Thank you for submitting");
- reset();
+  window.alert("Thank you for submitting");
+  reset();
 }
 
 //This is the clearing function
-function reset() {    
+function reset() {
   document.getElementById("comment").value = "";
 }
 
@@ -34,31 +33,23 @@ var coll = document.getElementsByClassName("collapse");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
+      content.style.maxHeight = content.scrollHeight + "100px";
+    }
   });
 }
 
 
-
-const btn = document.querySelector("button");
-      const post = document.querySelector(".post");
-      const widget = document.querySelector(".star-widget");
-      const editBtn = document.querySelector(".edit");
+function RTxt() {
+  var rTxt = document.getElementById("reviewtxt");
+  var rDiv = document.querySelector('.star-widget');
+  rTxt.style.display="block";
+  rDiv.style.display="none";
   
-      btn.onclick = ()=>{
-        widget.style.display = "none";
-        post.style.display = "block";
-        editBtn.onclick = ()=>{
-          widget.style.display = "block";
-          post.style.display = "none";
-          
-        }
-        return false;
-      }
+  return false;
+}
