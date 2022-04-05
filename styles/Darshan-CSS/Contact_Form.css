@@ -125,7 +125,6 @@ header{
 
 /*Designing Contact Form*/
 main{
-    background-color: cornflowerblue; 
     font-size: 14px; /*size of element in body*/
     font-family: 'Montserrat', sans-serif;
     height: fit-content;
@@ -143,6 +142,7 @@ main .page-desc .container{
     margin: auto; /*align to center*/
     height: fit-content;
     flex-wrap: nowrap;
+    border: 2px solid grey;
 }
 main .page-desc .container .content-left{
     padding: 40px 10px; /*padding top-bottom 40 and left-right 60px*/
@@ -152,7 +152,8 @@ main .page-desc .container .right{
     background: #01d28e; /*right-side background*/
     color: #fff; /*font color*/
     flex-basis: 40%;
-    height: 450px;
+    height: 500px;
+    border-left: 2px solid grey;
 }
 main .page-desc .container .right .content-right{
     padding: 40px 10px; /*padding from all sides in container right*/
@@ -169,11 +170,12 @@ main .page-desc p{
 }
 main .page-desc .container .content-left h2,main .page-desc .container .right .content-right h2{
     padding-bottom: 10px;  /*padding down to h2 element*/
+    text-align: center;
 }
 main .page-desc .container .content-left .row{
     display: flex;  /*align 2 label with input horizontally*/
     justify-content: space-between; /*maintain space between elements*/
-    margin-bottom: 20px; /*space down to h2 element*/
+    margin-bottom: 30px; /*space down to h2 element*/
 }
 main .page-desc .container .content-left .row .row-group{
     flex-basis: 45%; /*sets the size of the content box*/
@@ -209,6 +211,7 @@ main .page-desc .container .content-left form button{
     margin-top: 20px;/*top spacing*/
     width: 100%; /*full-width*/
     font-size: 1.2rem; /*size of button element*/
+    cursor: pointer;
 }
 main .page-desc .container .right .content-right tr td:first-child{
     padding-right: 20px; /*only appicable for first data in row have padding right*/
@@ -217,7 +220,12 @@ main .page-desc .container .right .content-right tr td{
     padding-top: 20px; /*increase space from top */
     font-weight: bold; /*change font to bold text font*/
 }
-
+.row-group .error,.group .error {
+  color: #ff3860;
+  font-size: 15px;
+  height: 13px;
+  font-weight: bolder;
+}
 /* start of footer styling */
 footer {
     border: 2px solid grey;
@@ -338,9 +346,17 @@ footer .form-subscribe{
     main .page-desc .container{
         flex-direction:column-reverse; /*to bring info container above form contanier*/
     }
+    main .page-desc .container .right{
+      width: 100%;
+      border-left: none;
+      border-bottom: 2px solid grey;
+    }
     main .page-desc .container .right .content-right{
         padding: 0%; /*adjusting info container within available width*/
         margin-bottom: 10px;
+    }
+    main .page-desc .container .right .content-right table{
+      margin-left: 30px;
     }
     main .page-desc .container .right .content-right h2{
         text-align: center; /*center title of info contanier */
@@ -369,6 +385,9 @@ footer .form-subscribe{
         margin-top: 10px;
         margin-left: 50px;
     }
+    main .page-desc .container .right .content-right table{
+      margin-left: 0px;
+    }
 }
 @media screen and (max-width:527px){
   #task1 ul li{
@@ -381,5 +400,8 @@ footer .form-subscribe{
   }
   .form-subscribe{
     margin-left: 50%;
+  }
+  main .page-desc .container .right{
+    height: 600px;
   }
 }
