@@ -2,15 +2,15 @@
 <html>
     <head>
         <title>Recipes</title>
-        <link href="images_Kaiyan/favicon.jfif" rel="shortcut icon">
+        <link href="images/images_Kaiyan/favicon.jfif" rel="shortcut icon">
         <meta charset="utf-8" />
-        <link href="styles_Kaiyan/recipe2Kaiyan.css" rel="stylesheet" />
+        <link href="styles/styles_Kaiyan/recipe2Kaiyan.css" rel="stylesheet" />
     </head>
     <body>
         <header>
             <div class="container">
               <div class="logo">
-                <a href="#"><img src="images_Kaiyan/new-logo.jpeg" alt="logo"></a>
+                <a href="#"><img src="images/images_Kaiyan/new-logo.jpeg" alt="logo"></a>
               </div>
               <div class="navbar">
                 <div class="icon-bar" onclick="Show()">
@@ -22,11 +22,11 @@
                 </div>
                 <ul id="nav-lists">
                   <li class="close"><span onclick="Hide()">×</span></li>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="Recipe.html">Recipe</a></li>
-                  <li><a href="Chef.html">Chef</a></li>
-                  <li><a href="Contact.html">Contact Us</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="recipesall.html">Recipe</a></li>
+                  <li><a href="FAQs.html">FAQs</a></li>
+                  <li><a href="Contact_Form.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -35,7 +35,7 @@
               <div class = "main" >
                   <div class="title">
                       <h1><br>Chicken and Eggs Breakfast Skillet</h1><br>
-                      <img src="images_Kaiyan/breakfast-skillet.jpg" alt="breakfast-skillet">
+                      <img src="images/images_Kaiyan/breakfast-skillet.jpg" name="slideshow" id="slideshow" alt="breakfast-skillet">
                   </div>
                   <div class="description">
                       <h2>This one skillet breakfast is such a treat on the weekend. 
@@ -61,6 +61,52 @@
                       <h2>Step4</h2><br>
                       <p>Season with salt and pepper and sprinkle with freshly chopped chives. Remove from the skillet and slice into wedges. Serve immediately.</p>
                   </div>
+                  
+                  <div class="register">
+                  <h1>Register for an Account</h1><br>
+                  <form action="confirm.html" method="get">
+                      <div>
+                          <label for="email_address">E-Mail:</label>
+                          <input type="text" name="email_address" id="email_address">
+                          <span>*</span>
+                      </div>
+                      <div>
+                          <label for="phone">Mobile Phone:</label>
+                          <input type="text" name="phone" id="phone">
+                          <span>*</span>
+                      </div>
+                      <div>
+                          <label for="country">Country:</label>
+                          <select name="country" id="country">
+                              <option value="">Select a country</option>
+                              <option>USA</option>
+                              <option>Canada</option>
+                              <option>Mexico</option>
+                          </select>
+                          <span>*</span>
+                      </div>
+                      <div>
+                          <label>Contact me by:</label>
+                          <input type="radio" name="contact" id="text"
+                              value="text" checked>Text
+                          <input type="radio" name="contact" id="email"
+                              value="email">Email
+                          <input type="radio" name="contact" id="none"
+                              value="none">Don't contact me
+                      </div>
+                      <div>
+                          <label>Terms of Service:</label>
+                          <input type="checkbox" name="terms" id="terms"
+                              value="yes">I accept
+                          <span>*</span>
+                      </div>
+                      <div>
+                          <label>&nbsp;</label>
+                          <input type="button" id="register" value="Register">
+                          <input type="button" id="reset_form" value="Reset">
+                      </div>
+                  </form>
+                  </div> 
               </div>
           </main>        
           <footer>
@@ -103,5 +149,6 @@
               </div>
             </div>      
           </footer>   
+          <script src="js/js_Kaiyan/feature2_form_Kaiyan.js"></script>
     </body>
 </html>
