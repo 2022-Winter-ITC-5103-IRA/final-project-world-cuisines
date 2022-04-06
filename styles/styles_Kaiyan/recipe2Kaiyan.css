@@ -114,9 +114,9 @@ header{
 /*main*/
 .main{
     display:grid;
-    height:2000px;
+    height:2333px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 .title{
@@ -158,6 +158,35 @@ header{
     text-align: center;
     padding-top: 50px;
     font-size: large;
+}
+
+.register {
+    grid-row: 10/11;
+    grid-column: 3/5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 500px;
+    padding: 0 2em 1em;
+}
+.register h1 {
+    color: #ff8800;
+    text-align: center;
+}
+.register div {
+    margin-bottom: 1em;
+}
+.register label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+}
+.register input, select {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+.register select { width: 13em; }
+.register span {
+    color: red;
 }
 
 /* start of footer styling */
@@ -295,4 +324,6 @@ footer .form-subscribe{
   .form-subscribe{
     margin-left: 50%;
   }
+
 }
+

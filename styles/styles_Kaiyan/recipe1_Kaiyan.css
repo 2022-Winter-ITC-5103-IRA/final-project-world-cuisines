@@ -116,7 +116,7 @@ header{
   display:grid;
   height:2000px;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 
 .title{
@@ -152,12 +152,37 @@ header{
   color: #ffffff;
 }
 
-.step{
-  grid-row: 7/10;
+#step{
+  grid-row: 7/9;
   grid-column: 3/5;
   text-align: center;
   padding-top: 50px;
   font-size: large;
+}
+
+#step h2 {
+  font-size: 120%;
+  padding: .25em 0 .25em 25px;
+  cursor: pointer;
+  /* background:rgb(51, 109, 133) no-repeat left center; */
+}
+/* #step h2.minus {
+  background:#ff8800 no-repeat left center;
+} */
+
+#step a {
+  color: black;
+  text-decoration: none; 
+}
+#step a:focus, a:hover { 
+color: grey; 
+}
+
+#step div {
+  display: none;
+}
+#step div.open {
+  display: block;
 }
 
 /* start of footer styling */
