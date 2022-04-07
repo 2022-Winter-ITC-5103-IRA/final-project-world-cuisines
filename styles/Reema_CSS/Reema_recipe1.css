@@ -138,8 +138,8 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
   margin-top: 50px;
+  margin-left: 250px;
 }
 
 .mySlides img
@@ -221,7 +221,7 @@ img {vertical-align: middle;}
 main h1
 {
   text-decoration: underline;
-  text-align: center;
+  margin-left: 300px;
   padding: 20px;
   font-size: 50px;
 }
@@ -255,6 +255,13 @@ main h1
 {
   height: 150px;
   
+}
+#output
+{
+  margin-left: 70px;
+  font-weight: lighter;
+  color: red;
+  margin-top: 0px;
 }
 /*Editing the textarea*/
 textarea
@@ -459,6 +466,15 @@ body
   {
     margin: 0px;
   }
+  main h1
+  {
+    margin: 0px;
+    font-size: larger;
+  }
+  .slideshow-container
+  {
+    margin: 0px;
+  }
   #details
   {
     margin: 0px;
@@ -492,6 +508,16 @@ body
   {
     margin-left: 70px;
     margin-top: -30px;
+  }
+  #email
+  {
+    display: none;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  #output
+  {
+    margin: 0px;
   }
   footer .About_US,footer .navi,footer .address
   {

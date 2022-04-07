@@ -135,8 +135,7 @@ header
 {  
   width: 100%;  
 } 
-.collapse 
-{
+.collapse {
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -147,10 +146,12 @@ header
   outline: none;
   font-size: 15px;
 }
-.collapse:hover 
+
+.active, .collapse:hover 
 {
   background-color: #555;
 }
+
 .collapse:after 
 {
   content: '\002B';
@@ -159,16 +160,17 @@ header
   float: right;
   margin-left: 5px;
 }
-.p2:after 
-{
+
+.active:after {
   content: "\2212";
 }
-.p2 
-{
+
+.p2 {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  font-size: large;
+  margin: 20px;
   background-color: #f1f1f1;
 }
 #set
@@ -226,11 +228,6 @@ main nav h1
     margin-left: 20px;
     padding-top: 10px;
     color: rgb(74, 94, 3);
-}
-.p2
-{
-    font-size: large;
-    margin: 20px;
 }
 main nav
 {
