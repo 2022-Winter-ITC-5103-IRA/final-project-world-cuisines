@@ -361,10 +361,6 @@ footer .form-subscribe{
         margin-right: 0;
         text-align: center;
     }
-    main .yields,main .prep-time{
-        font-size: .75rem;
-        line-height: 1.4;
-    }
     main .yields-amount, main .prep-time-amount,.cook-time-amount,.total-time-amount{
         padding: 0.625rem 0 0;
         display: block;
