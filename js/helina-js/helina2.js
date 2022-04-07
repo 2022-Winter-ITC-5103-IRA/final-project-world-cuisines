@@ -1,3 +1,8 @@
+// this function will be called by clicking side button and will be redirected to the particluar division mentioned by giving id
+function scrollEvent(division){
+  const element = document.getElementById(division);
+  element.scrollIntoView({behavior: 'smooth', block:'center'});
+}
 // onclicking the hamburger menu will be shown when a responsive screen is used
 function showMenu(){
   var content= document.getElementById('LeftSlider');
@@ -36,27 +41,6 @@ window.addEventListener("load", function(){
 document.querySelector("#close").addEventListener("click", function(){
   document.querySelector(".popup").style.display = "none";
 });
-
-//Dropdown
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 // form validation
 function validate(){
