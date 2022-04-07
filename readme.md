@@ -7,30 +7,30 @@
 - To merge all the html, css, images and js files of all the team members
 - To add more javascript for practice
 - Helina Gandhi
-    recipe1
-    recipe2
-    recipe3
--Reemaben Patel
-    recipe1
-    recipe2
-    recipe3
--Darshankumar Patel
-    Contact_Form
-    Lasagna
-    Malai_Kofta
--Vishesh Makwana
-    home
-    about us
-    FAQs
-    recipes
--Kaiyan Chen 
-    recipe1
-    recipe2
-    recipe3
--Nahom Kahssay
-    et_coffee
-    Tej
-    Tibbs
+    - recipe1
+    - recipe2
+    - recipe3
+- Reemaben Patel
+    - recipe1
+    - recipe2
+    - recipe3
+- Darshankumar Patel
+    - Contact_Form
+    - Lasagna
+    - Malai_Kofta
+- Vishesh Makwana
+    - home
+    - about us
+    - FAQs
+    - recipes
+- Kaiyan Chen 
+    - recipe1
+    - recipe2
+    - recipe3
+- Nahom Kahssay
+    - et_coffee
+    - Tej
+    - Tibbs
 
 ## Leaning curve and challenges
 
