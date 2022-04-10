@@ -462,6 +462,10 @@ footer .form-subscribe{
     .next{
       margin-left: 250px;
     }
+    .ratingcontainer{
+      width: 350px;
+      padding: 0%;
+    }
 }
 @media screen and (max-width:376px){
     nav{
@@ -480,6 +484,12 @@ footer .form-subscribe{
     .receipe{
         margin: 8% 0%;
     }
+    .ratingcontainer{
+      width: 300px;
+    }
+    .star-widget label{
+      font-size: 30px;
+    }
 }
 @media screen and (max-width:326px){
     footer .submit{
@@ -491,6 +501,12 @@ footer .form-subscribe{
     }
     .next{
       margin-left: 200px;
+    }
+    .ratingcontainer{
+      width: 250px;
+    }
+    .star-widget label{
+      font-size: 20px;
     }
 }
 @media screen and (max-width:720px){

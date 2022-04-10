@@ -167,6 +167,45 @@ main .yields-unit,main .recipe-time-unit{
     text-transform: none;
     vertical-align: middle;
 }
+main .row{
+    margin: 20px;
+}
+main h1{
+    text-align: center;
+}
+main #CalorieMeter{
+    border: 2px solid grey;
+    align-items: left;
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+main .calculate{
+    margin-bottom: 40px;
+}
+main .alert{
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    width: max-content;
+    font-size: 2rem;
+}
+main #loading, #results {
+    display: none;
+    width: max-content;
+    margin: 0 auto;
+}
+main #results{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+main #total-calories{
+    width: 300px;
+}
 /* start of footer styling */
 footer {
     border: 2px solid grey;
@@ -320,6 +359,28 @@ footer .form-subscribe{
     form .form-subscribe{
       margin-left: 0%;
     }
+    main #CalorieMeter{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main .alert{
+        font-size: 1rem;
+    }
+    main .row{
+        margin: 15px;
+    }
+    main #list{
+        width:300px;
+    }
+    main .dropdown{
+        font-size: 80%;
+    }
+    main .btn{
+        margin-left: 130px;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -328,6 +389,24 @@ footer .form-subscribe{
     footer .submit{
         margin-top: 10px;
         margin-left: 50px;
+    }
+    main #CalorieMeter{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main #list{
+        width: 280px;
+    }
+    main .dropdown{
+        font-size: 60%;
+    }
+    main .alert{
+        width: 280px;
+    }
+    main #total-calories{
+        width: 200px;
     }
 }
 @media screen and (max-width:527px){
