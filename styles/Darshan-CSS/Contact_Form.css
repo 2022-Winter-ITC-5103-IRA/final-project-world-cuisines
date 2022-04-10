@@ -221,7 +221,7 @@ main .page-desc .container .right .content-right tr td{
     font-weight: bold; /*change font to bold text font*/
 }
 .row-group .error,.group .error {
-  color: #ff3860;
+  color: #ff3860;  /*show error messahe in red color*/
   font-size: 15px;
   height: 13px;
   font-weight: bolder;
