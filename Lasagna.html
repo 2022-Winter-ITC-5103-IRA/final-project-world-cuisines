@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/Darshan-CSS/Lasagna.css">
+    <link href="images/Darshan-Images/Web_LOGO.jpeg" rel="shortcut icon">
     <title>LASAGNA_Receipe_PAGE</title>
 </head>
   <body>
@@ -92,6 +93,54 @@
         <div role="heading" aria-level="2" class="timer-title total-time">
           Total Time:<span class="total-time-amount">1<span class="recipe-time-unit"> hours</span> 0
           <span class="recipe-time-unit"> mins</span></span>
+        </div>
+      </div>
+      <div class="calculate">
+        <div class="card">
+          <h1 class="heading">Calculate Your Calorie</h1>
+          <form action="#" id="CalorieMeter">
+            <div class="row">
+              <label for="age">Age:-</label>
+              <input type="number" id="age" placeholder="Enter your Age(15-80):"> <br>
+            </div>
+            <div class="row">  
+              <label for="Gender" >Gender:-</label>
+              <input type="radio" id="Male" name="Gender" value="Male" checked>
+              <label for="Male">Male</label>
+              <input type="radio" id="Female" name="Gender" value="Female">
+              <label for="Female">Female</label><br>
+            </div>
+            <div class="row">
+              <label for="Height">Height:-</label>
+              <input type="number" id="height" placeholder="In Centimeters"> <br>
+            </div>
+            <div class="row">
+              <label for="Weight">Weight:-</label>
+              <input type="number" id="weight" placeholder="In Kilograms"> <br>
+            </div>
+            <div class="row">
+              <label>Select Daily Activity:-</label>
+              <select id="list">
+                <option selected value="1" class="dropdown">Sedentary (little or no exercise)</option>
+                <option value="2" class="dropdown">Lightly active (light exercise/sports 1-3 days/week)</option>
+                <option value="3" class="dropdown">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                <option value="4" class="dropdown">Very active (hard exercise/sports 6-7 days a week)</option>
+                <option value="5" class="dropdown">Extra active (very hard exercise/sports & physical job or 2x training)</option>
+              </select>
+            </div>
+            <div class="btn">
+              <input type="submit" value="Calculate">
+            </div>
+          </form>
+          <div class="output">
+            <div id="loading">
+              <img src="images/Darshan-Images/Loading.gif" alt="loading results">
+            </div>
+            <div id="results">
+              <h2>Total Calories</h2>
+              <input type="number" id="total-calories" disabled>
+            </div>
+          </div>
         </div>
       </div>
     </main>
