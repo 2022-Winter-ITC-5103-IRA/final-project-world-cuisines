@@ -7,10 +7,10 @@ const msg = document.getElementById('message');
 
 //checking validation
 form.addEventListener('submit', e => {
-  e.preventDefault();
-  validateInputs();
+  e.preventDefault(); // prevent the form from submitting automatically
+  validateInputs(); //validate the inputs and we can submit the form after every check succeed 
 });
-//Check for each input field error and success
+//two functions set the error or success states of the each of the input controls
 const setError = (element, message) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector('.error');
@@ -46,7 +46,7 @@ const validateInputs = () => {
   if(fnameValue === '') {
       setError(fname, '[Firstname is required]');
       loop=false;
-  } else if(fnameValue.match(letters) && fnameValue.length>2)
+  } else if(fname.value.match(letters) && fnameValue.length>2)
   {
     setSuccess(fname);
   }
@@ -57,9 +57,9 @@ const validateInputs = () => {
   if(lnameValue === '') {
     setError(lname, '[Lastname is required]');
     loop=false;
-  }else if(lnameValue.match(letters) && lnameValue.length>2)
+  }else if(lname.value.match(letters) && lnameValue.length>4)
   {
-    setSuccess(fname);
+    setSuccess(lname);
   }
   else {
     setSuccess(lname);
@@ -88,7 +88,7 @@ const validateInputs = () => {
     setError(phone, '[Length 10 digits and Number Only.]');
     loop=false;
   }
-
+  //check message is not null and having minimum 40 characters.
   if(msgValue === '') {
     setError(msg, '[Message cannot be empty]');
     loop=false;
@@ -100,7 +100,8 @@ const validateInputs = () => {
     setError(msg,'[Minimum 40 character]');
     loop=false;
   }
-  if(loop===true){
+  //all success then clear form after showing pop-up
+  if(loop===true){ 
     setTimeout(() => { alert('Message Recorded!!!') },10)
     fname.value="";
     lname.value="";

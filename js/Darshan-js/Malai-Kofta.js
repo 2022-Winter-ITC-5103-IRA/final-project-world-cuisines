@@ -42,12 +42,12 @@ const title = document.querySelector(".ratingcontainer h4");
 btn.onclick = ()=>{
   widget.style.display = "none";
   post.style.display = "block";
-  message.value="";
   title.style.display="none";
   editBtn.onclick = ()=>{
       widget.style.display = "block";
       post.style.display = "none";
       title.style.display="block";
+
   }
   return false;
 }
