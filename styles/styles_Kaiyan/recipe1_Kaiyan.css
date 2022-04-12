@@ -152,23 +152,23 @@ header{
   color: #ffffff;
 }
 
-#step{
+.step{
   grid-row: 7/9;
   grid-column: 3/5;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: large;
 }
 
-#step h2 {
+/* #step h2 {
   font-size: 120%;
   padding: .25em 0 .25em 25px;
   cursor: pointer;
-  /* background:rgb(51, 109, 133) no-repeat left center; */
+  background:rgb(51, 109, 133) no-repeat left center;
 }
-/* #step h2.minus {
+#step h2.minus {
   background:#ff8800 no-repeat left center;
-} */
+}
 
 #step a {
   color: black;
@@ -183,7 +183,7 @@ color: grey;
 }
 #step div.open {
   display: block;
-}
+} */
 
 /* start of footer styling */
 footer {
