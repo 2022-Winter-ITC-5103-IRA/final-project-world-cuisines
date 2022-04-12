@@ -115,6 +115,7 @@ header{
 main{
     border: 2px solid grey;
 }
+/*Setting content display in middle*/
 main .maincontainer{
     display: flex;
     justify-content:flex-start;
@@ -124,6 +125,7 @@ main p,h1,h3{
     margin-bottom: 10px;
     margin-top: 10px;
 }
+/*Setting image element*/
 main img{
     height: 60%;
     width: 90%;
@@ -143,29 +145,80 @@ main .ingredients,main .info,main .ing-dir-wrap{
 main .ing-dir-wrap{
     border-right: none;
 }
+/*Showing dotted line for preparation time and other activity*/
 main .timer{
     border-top: 0.22rem dotted #159a92;
     border-bottom: 0.22rem dotted #159a92;
     margin: 1.875rem 0;
 }
+/*color of each preparation mention*/
 main .timer .timer-title{
     color: #515151;
     font-weight: 700;
 }
+/*covert text to Uppercase all*/
 main .yields,main .prep-time,main .cook-time,main .total-time{
     text-transform: uppercase;
     letter-spacing: .07rem;
 }
+/*Color of time*/
 main .yields-amount, main .prep-time-amount,.cook-time-amount,.total-time-amount
 {
     color: #d64e79;
 }
+/*element span of time like minute,hour*/
 main .yields-unit,main .recipe-time-unit{
     font-size: .75rem;
     line-height: 1.4;
     color: #515151;
     text-transform: none;
     vertical-align: middle;
+}
+/*Each element in form container*/
+main .row{
+    margin: 20px;
+}
+main h1{
+    text-align: center;
+}
+/*form*/
+main #CalorieMeter{
+    border: 2px solid grey;
+    align-items: left;
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+/*form container*/
+main .calculate{
+    margin-bottom: 40px;
+}
+/*alert during error in calculator of calorie*/
+main .alert{
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    width: max-content;
+    font-size: 2rem;
+}
+/*loading gif and result section*/
+main #loading, #results {
+    display: none;
+    width: max-content;
+    margin: 0 auto;
+}
+/*overwrite result section*/
+main #results{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/*answer in input field width*/
+main #total-calories{
+    width: 300px;
 }
 /* start of footer styling */
 footer {
@@ -320,14 +373,52 @@ footer .form-subscribe{
     form .form-subscribe{
       margin-left: 0%;
     }
+    main #CalorieMeter{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main .alert{
+        font-size: 1rem;
+    }
+    main .row{
+        margin: 15px;
+    }
+    main #list{
+        width:300px;
+    }
+    main .dropdown{
+        font-size: 80%;
+    }
+    main .btn{
+        margin-left: 130px;
+        margin-bottom: 20px;
+    }
 }
-
-
 
 @media screen and (max-width:326px){
     footer .submit{
         margin-top: 10px;
         margin-left: 50px;
+    }
+    main #CalorieMeter{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main #list{
+        width: 280px;
+    }
+    main .dropdown{
+        font-size: 60%;
+    }
+    main .alert{
+        width: 280px;
+    }
+    main #total-calories{
+        width: 200px;
     }
 }
 @media screen and (max-width:527px){
@@ -361,10 +452,6 @@ footer .form-subscribe{
         margin-right: 0;
         text-align: center;
     }
-    main .yields,main .prep-time{
-        font-size: .75rem;
-        line-height: 1.4;
-    }
     main .yields-amount, main .prep-time-amount,.cook-time-amount,.total-time-amount{
         padding: 0.625rem 0 0;
         display: block;
@@ -377,7 +464,6 @@ footer .form-subscribe{
         line-height: 1;
     }
 }
-
 @media only screen and (min-width:1024px){
     main .ingredients,main .info,main .ing-dir-wrap{
         height: 650px;

@@ -125,9 +125,15 @@ body {
   height: 2px;
 }
 
+#jiji {
+  margin-right: 404px;
+}
+
+
 #img_1 {
   float: right;
 }
+
 
 #ght {
   margin-right: 35px;
@@ -258,4 +264,8 @@ footer .form-subscribe{
   .container .navbar ._Menus-show {
     left: 0;
   }
+}
+
+.prev, .next,.text {
+  font-size: 11px
 }

@@ -432,6 +432,19 @@ margin-top: -20px;
   margin-bottom: 10px;
 }
 
+.form .btn #submit{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: red;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+}
 .form .input_field input[type="text"],
 .form textarea{
   border: 1px solid #e0e0e0;

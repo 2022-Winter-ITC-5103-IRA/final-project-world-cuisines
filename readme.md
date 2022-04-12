@@ -10,7 +10,11 @@
     - recipe1
     - recipe2
     - recipe3
+<<<<<<< HEAD
 - Reemaben Patel
+=======
+- Reemabahen Patel
+>>>>>>> 9133c5c4fa1c79aea428818299a65506ed3d580b
     - recipe1
     - recipe2
     - recipe3

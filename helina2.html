@@ -287,7 +287,7 @@
   <div class="form">
     <h2>Want to add your recepie!!</h2>
     <div id="error_message"></div>
-    <form id="myform" onsubmit="return validate();">
+    <form id="myform" >
       <div class="input_field">
         <input type="text" placeholder="Name" id="name">
       </div>
@@ -298,10 +298,10 @@
         <input type="text" placeholder="Email" id="email">
       </div>
       <div class="input_field">
-        <textarea placeholder="Message" id="message"></textarea>
+        <textarea placeholder="Message" ></textarea>
       </div>
       <div class="btn">
-        <input type="submit">
+        <button  id ="submit" onclick="validate()">
       </div>
     </form>
   </div>
@@ -317,11 +317,11 @@
       <div class="navi">
         <h3>Navigation</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All Receipes</a></li>
-          <li><a href="#">Our Chef's</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="recipesall.html">Recipe</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="Contact_Form.html">Contact Us</a></li>          
         </ul>
       </div>
       <div class="address">
@@ -348,6 +348,7 @@
     </div>
   </footer>
   <script src="js/helina-js/helina2.js"></script>
+
 </body>
 
 </html>

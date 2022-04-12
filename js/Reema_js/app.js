@@ -95,8 +95,6 @@ function RTxt() {
 }
 
 function ISPrint() {
-  // var elem=document.getElementById("article");
-  // window.print(elem);
   var divContents = document.getElementById("article").innerHTML;
   var a = window.open('', '');
   a.document.write('<html>');
@@ -106,3 +104,49 @@ function ISPrint() {
   a.document.close();
   a.print();
 }
+
+
+function myF1() {
+  window.open("https://www.swiggy.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
+}
+function myF2() {
+  window.open("https://www.ubereats.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
+}
+function myF1() {
+  window.open("https://www.doordash.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
+}
+function myF1() {
+  window.open("https://www.skipthedishes.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
+}
+
+
+function openForm() {
+  document.getElementById("form-container").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("form-container").style.display = "none";
+}
+
+function myImages(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+
+
+function sub()
+{
+  alert("Thank you for submitting");
+}
+
+function abc()
+{
+  alert("Thank you for submitting");
+}
+
+
+  const d = new Date();
+document.getElementById("demo").innerHTML = d;

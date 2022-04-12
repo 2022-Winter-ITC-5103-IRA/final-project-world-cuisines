@@ -33,21 +33,19 @@ function prewImage(){
 // script for auto image slider
 //setInterval(nextImage , 4000);
 
-const btn = document.querySelector("button");
-const post = document.querySelector(".post");
-const widget = document.querySelector(".star-widget");
-const editBtn = document.querySelector(".edit");
-const message = document.querySelector(".message");
-const title = document.querySelector(".ratingcontainer h4");
+const btn = document.querySelector("button"); //submit button
+const post = document.querySelector(".post");  //message and edit option div container
+const widget = document.querySelector(".star-widget");  //star input
+const editBtn = document.querySelector(".edit");    //edit button
+const title = document.querySelector(".ratingcontainer h4"); //rate recipe title
 btn.onclick = ()=>{
-  widget.style.display = "none";
-  post.style.display = "block";
-  message.value="";
-  title.style.display="none";
+  widget.style.display = "none";  //hide star
+  post.style.display = "block";  //display message and edit option
+  title.style.display="none";    //hide title(rate recipe)
   editBtn.onclick = ()=>{
-      widget.style.display = "block";
-      post.style.display = "none";
-      title.style.display="block";
+      widget.style.display = "block"; //display star
+      post.style.display = "none";  //hide message and edit option
+      title.style.display="block";  //display title(rate recipe)
   }
   return false;
 }
