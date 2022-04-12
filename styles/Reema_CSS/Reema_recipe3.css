@@ -131,6 +131,69 @@ body
    flex-direction: column;
    margin: 0;
 }
+/* The grid: Four equal columns that floats next to each other */
+.column 
+{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+  
+/* Style the images inside the grid */
+.column img 
+{
+    opacity: 0.8; 
+    cursor: pointer;
+    width: 100%; 
+}   
+.column img:hover 
+{
+    opacity: 1;
+}
+  
+  /* Clear floats after the columns */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* The expanding image container */
+.cont 
+{
+    position: relative;
+    display: none;
+}
+  
+  /* Expanding image text */
+#imgtext 
+{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+  
+  /* Closable button inside the expanded image */
+.closebtn 
+{
+    position: absolute;
+    left: 870px;
+    color: rgb(19, 18, 18);
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#expandedImg
+{
+    width: 50%;
+    height: 30%;
+    margin: 0px 300px;
+}
+
 #main
 {
    display: flex;
@@ -158,6 +221,10 @@ article, nav, aside
 {
     padding: 1em;
 }
+article button
+{
+    margin-top: 10px;
+}
 #description
 {
     list-style: none;
@@ -178,18 +245,160 @@ article, nav, aside
 }
 #salad
 {
-    margin-left: 600px;
-    margin-top: -300px;
     height: 400px;
 }
-#wrap
+
+blink 
+{
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+    animation: 0.8s linear infinite condemned_blink_effect;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 60px;
+}
+  
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect 
+{
+    0% 
+    {
+      visibility: hidden;
+    }
+    50% 
+    {
+      visibility: hidden;
+    }
+    100% 
+    {
+      visibility: visible;
+    }
+}
+  
+@keyframes condemned_blink_effect 
+{
+    0% 
+    {
+      visibility: hidden;
+    }
+    50% 
+    {
+      visibility: hidden;
+    }
+    100% 
+    {
+      visibility: visible;
+    }
+}
+
+blink
+{
+      color: red;
+}
+#wrap2
 {
     display: flex;
+    flex-direction: column;
 }
+
+#wrap2 button
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.open-button 
+{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 280px;
+
+}
+#form-container
+{
+    display: none;
+    padding: 15px;
+    margin-top: 15px ;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+#form-pop
+{
+    max-width: 400px;
+    background-color: white;
+}
+#form-container .btn 
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    margin-top: 10px;
+    opacity: 0.8;
+    text-align: center;
+}
+input[type=text],input[type=email],input[type=number]
+{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+  /* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=email]:focus, .form-container input[type=number]:focus 
+{
+    background-color: #ddd;
+    outline: none;
+}
+.btn-cancel 
+{
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    margin-top: 10px;
+    opacity: 0.8;
+    background-color: red;
+    text-align: center;
+}
+  
+  /* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover 
+{
+    opacity: 1;
+ }
+
+.hide
+{
+    display: none;
+}
+
+.myDIV:hover + .hide 
+{
+    display: block;
+    color: rgb(10, 10, 10);
+}
+
+
 .steps
 {
-    padding: 13px;
-    width: 30%;
+    padding: 0px;
+    width: 100%;
+    text-align: justify;
+}
+#swiggy
+{
+    display: none;
 }
 textarea
 {
@@ -316,7 +525,19 @@ footer .form-subscribe
     {
         left: 0;
     }
-    
+    #expandedImg
+    {
+      width: 70%;
+      height: 20%;
+      margin: 0px;
+    }
+  
+    .closebtn 
+    {
+        
+        left: 240px;
+        
+    }
     #main
     {
         flex-direction: column;
@@ -325,10 +546,6 @@ footer .form-subscribe
     {
         margin: 0px;
         width: 300px;
-    }
-    #wrap
-    {
-        flex-direction: column;
     }
     .steps
     {
