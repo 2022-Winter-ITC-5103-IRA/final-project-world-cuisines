@@ -10,7 +10,7 @@
     - recipe1
     - recipe2
     - recipe3
-- Reemaben Patel
+- Reemabahen Patel
     - recipe1
     - recipe2
     - recipe3
