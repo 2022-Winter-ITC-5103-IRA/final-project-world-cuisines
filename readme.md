@@ -28,9 +28,15 @@
     - FAQs
     - recipes
 - Kaiyan Chen 
-    - recipe1
-    - recipe2
-    - recipe3
+    - recipe1: breakfast-burrito 
+    - JS:slide show, dynamic content(user can submit comment and show on page)
+    - URL:
+    - recipe2: breakfast-skillet
+    - JS:slide show, register form validation
+    - URL: 
+    - recipe3: Spinach & Egg Skillet
+    - JS: slide show with Jquery (click to show picture), accordion with Jquery
+    - URL: 
 - Nahom Kahssay
     - et_coffee
     - Tej
