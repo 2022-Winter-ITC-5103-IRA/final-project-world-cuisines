@@ -13,9 +13,9 @@
     - helina_css(folder)
     - helina_js(folder)
 - Reemabahen Patel
-    - Reema_recipe1
-    - Reema_recipe1
-    - Reema_recipe1
+    - Reema_recipe1 : MINT & BASIL GRIDDLED PEACH SALAD
+    - Reema_recipe1 : GREEN SALAD WITH CHERRIES
+    - Reema_recipe1 : TURKEY SALAD WITH GRAPES AND WALNUTS
     - Reema_CSS(folder)
     - Reema_js(folder)
 - Darshankumar Patel
