@@ -114,9 +114,9 @@ header{
 /*main*/
 .main{
   display:grid;
-  height:2000px;
+  /* height:2000px; */
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
 
 .title{
@@ -156,8 +156,44 @@ header{
   grid-row: 7/9;
   grid-column: 3/5;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
   font-size: large;
+}
+
+.comment{
+  grid-row: 9/11;
+  grid-column: 2/6;
+  padding-top: 2em;
+  text-align: center;
+  font-size: larger;
+  line-height: 2.5em;
+}
+
+.message h2{
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.comment li{
+  list-style:inside;
+  font-style: italic;
+  padding-left: 20px;
+}
+
+.comments-input{
+  padding-top: 1em;
+}
+
+textarea{
+  width: 500px;
+  height: 100px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
+button{
+  font-size: large;
+  text-align: center;
 }
 
 /* #step h2 {
@@ -326,9 +362,9 @@ footer .newsletter{
 @media only screen and (max-width:540px){
   .main{
     display:grid;
-    height: 1200px;
+    /* height: 1200px; */
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
   }
   
   .title{
@@ -350,7 +386,7 @@ footer .newsletter{
     grid-column: 2/5;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10.5px;
+    font-size: 13px;
     padding-top: 10px;
   }
   
@@ -370,6 +406,42 @@ footer .newsletter{
     text-align: center;
     padding-top: 20px;
     font-size: 15px;
+  }
+
+  .comment{
+    grid-row: 6/8;
+    grid-column: 1/7;
+    padding-top: 2em;
+    text-align: center;
+    font-size: 15px;
+    line-height: 2.5em;
+  }
+  
+  .message h2{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+  
+  .comment li{
+    list-style:inside;
+    font-style: italic;
+    padding-left: 20px;
+  }
+  
+  .comments-input{
+    padding-top: 1em;
+  }
+  
+  textarea{
+    width: 350px;
+    height: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+  }
+  
+  button{
+    font-size: large;
+    text-align: 15px;
   }
   
   

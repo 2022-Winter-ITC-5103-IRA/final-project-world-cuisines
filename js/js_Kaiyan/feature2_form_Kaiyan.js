@@ -41,21 +41,21 @@ function ChangeImages(direction)
     
       let isValid = true;
       if (email.value == '') {
-        email.nextElementSibling.textContent = 'Please fill';
+        email.nextElementSibling.textContent = 'Invalid';
         isValid = false;
       } else {
         email.nextElementSibling.textContent = '';
       }
     
       if (phone.value == '') {
-        phone.nextElementSibling.textContent = 'Please fill';
+        phone.nextElementSibling.textContent = 'Invalid';
         isValid = false;
       } else {
         phone.nextElementSibling.textContent = '';
       }
     
       if (country.value == '') {
-        country.nextElementSibling.textContent = 'Please select';
+        country.nextElementSibling.textContent = 'Invalid';
         isValid = false;
       } else {
         $('#country').nextElementSibling.textContent = '';

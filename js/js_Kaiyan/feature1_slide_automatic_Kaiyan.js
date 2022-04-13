@@ -52,3 +52,24 @@ function ChangeImages(direction)
 	
 // 	h2Elements[0].firstChild.focus();
 // });
+
+//dynamic content
+let comments = ["This looks so good, can't wait to try it!", "It only takes me 15 minutes, easy for breakfast!", "Super loooooove!!!"];
+
+display = () => {
+  let commentsList = "";
+  comments.forEach((comment) => {
+    commentsList += "<li>" + comment + "</li>";
+  });
+  document.querySelector("#comment-list").innerHTML = commentsList;
+};
+
+add = () => {
+	let item = document.querySelector("#comments-input").value;
+	comments.push(item);
+	display();
+  };
+
+display();
+
+    
