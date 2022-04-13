@@ -1,18 +1,18 @@
 function showMenu() {
     var content = document.getElementById('LeftSlider');
     if (window.getComputedStyle(content).display === 'none') {
-      content.style.display = 'block';
+        content.style.display = 'block';
     }
-  }
-  
-  // onclicking the close button menu will be hidden when a responsive screen is used
-  function hideMenu() {
+}
+
+// onclicking the close button menu will be hidden when a responsive screen is used
+function hideMenu() {
     var content = document.getElementById('LeftSlider');
     if (window.getComputedStyle(content).display === 'block') {
-      content.style.display = 'none';
+        content.style.display = 'none';
     }
-  }
-  if (document.readyState == 'loading') {
+}
+if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
