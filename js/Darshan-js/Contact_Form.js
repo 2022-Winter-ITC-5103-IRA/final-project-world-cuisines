@@ -19,6 +19,8 @@ const setError = (element, message) => {
   errorDisplay.innerText = message; //display error in div container
   inputControl.classList.add('error'); //add on error
   inputControl.classList.remove('success'); //remove on success
+
+  setTimeout(function(){errorDisplay.innerText = '';},2000); //displaying error for 2 seconds
 }
 /*Opposite function of setError */
 const setSuccess = element => {
@@ -42,38 +44,50 @@ const validateInputs = () => {
   const emailValue = email.value.trim();
   const phoneValue = phone.value.trim();
   const msgValue = msg.value.trim();
-  var loop=true,letters = /^[A-Za-z]+$/,validnum=/^\d{10}$/; //regex for fname,lname and ContactNUmber
+  var flag=1,letters = /^[A-Za-z]+$/,validnum=/^\d{10}$/; //regex for fname,lname and ContactNUmber //flag 1 means TRUE
 
   //check firstname
   if(fnameValue === '') {
       setError(fname, '[Firstname is required]'); //if null then display error message
-      loop=false;
-  } else if(fname.value.match(letters) && fnameValue.length>2)
-  {
-    setSuccess(fname);
+      flag=0;
+  }else if(fnameValue.match(letters)){
+      if(fnameValue.length>2){
+        setSuccess(fname);
+      }
+      else{
+        setError(fname, '[Min. 3 Character]'); 
+        flag=0;   
+      }
   }
-  else {
+  else{
     setError(fname, '[Only Aplhabets Allowed]'); //if number present then display error message as only alphabet
+    flag=0;
   }
   //check lastname
   if(lnameValue === '') {
     setError(lname, '[Lastname is required]'); //if null then display error message
-    loop=false;
-  }else if(lname.value.match(letters) && lnameValue.length>4)
-  {
-    setSuccess(lname);
-  }
+    flag=0;
+  }else if(lnameValue.match(letters)){
+    if(lnameValue.length>3){
+      setSuccess(lname);
+    }
+    else{
+      setError(lname, '[Min. 4 Character]');    
+      flag=0;
+    }
+}
   else {
     setError(lname, '[Only Aplhabets Allowed]'); //if number present then display error message as only alphabet
+    flag=0;
   }
   //check email using RE.
   if(emailValue === '') {      //if null then display error message
     setError(email, '[Email is required]');
-    loop=false;
+    flag=0;
   } 
   else if (!isValidEmail(emailValue)) {  //if email does not match regex display error message
     setError(email, '[Provide a valid email address]');
-    loop=false;
+    flag=0;
   } 
   else {
     setSuccess(email);
@@ -81,29 +95,29 @@ const validateInputs = () => {
   //check phone length must be 10.
   if(phoneValue === '') {           //if null then display error message
     setError(phone, '[ContactNumber is required]');
-    loop=false;
+    flag=0;
   } 
   else if (phoneValue.length==10 && phoneValue.match(validnum)) {  //number should be 10 digits and no aplhaber allowed 
     setSuccess(phone);
   }  
   else {   //number!=10 and aphabet present then display error message
     setError(phone, '[Length 10 digits and Number Only.]');
-    loop=false;
+    flag=0;
   }
   //check message is not null and having minimum 40 characters.
   if(msgValue === '') {           //if null then display error message
     setError(msg, '[Message cannot be empty]');
-    loop=false;
+    flag=0;
   } 
   else if (msgValue.length>40) {     //Need more than 40 character
     setSuccess(msg);
   }  
   else {   //display error message if not more than 40 character
     setError(msg,'[Minimum 40 character]');
-    loop=false;
+    flag=0;
   }
   //all success then clear form after showing pop-up
-  if(loop===true){ 
+  if(flag==1){ 
     setTimeout(() => { alert('Message Recorded!!!') },10) //display pop-up
     //clear all fields filed-up
     fname.value="";  
