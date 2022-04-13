@@ -7,13 +7,17 @@
 - To merge all the html, css, images and js files of all the team members
 - To add more javascript for practice
 - Helina Gandhi
-    - recipe1
-    - recipe2
-    - recipe3
+    - helina1
+    - helina2
+    - H_customize
+    - helina_css(folder)
+    - helina_js(folder)
 - Reemabahen Patel
-    - recipe1
-    - recipe2
-    - recipe3
+    - Reema_recipe1
+    - Reema_recipe1
+    - Reema_recipe1
+    - Reema_CSS(folder)
+    - Reema_js(folder)
 - Darshankumar Patel
     - Contact_Form
     - Lasagna
