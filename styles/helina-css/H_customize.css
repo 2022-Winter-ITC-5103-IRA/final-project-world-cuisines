@@ -421,6 +421,10 @@ footer {
   footer p{
     padding-bottom: 10px;
   }
+  footer h3,p{
+    margin:0px;
+    padding:0px;
+  }
   footer a {
     color: #000;
     text-decoration: none;
