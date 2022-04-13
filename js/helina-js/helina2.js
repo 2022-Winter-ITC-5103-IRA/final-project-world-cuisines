@@ -74,7 +74,7 @@ function validate() {
   //   return false;
   // }
   alert("Form Submitted Successfully!");
-  // return true;
+  return true;
 
 }
 
