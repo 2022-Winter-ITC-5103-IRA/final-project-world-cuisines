@@ -29,13 +29,13 @@
                     </div>
                     <!--navigation bars are created using a tag-->
                     <ul id="nav-lists">
-                        <li class="close"><span >×</span></li>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="Recipe.html">Recipe</a></li>
-                        <li><a href="Chef.html">Chef</a></li>
-                        <li><a href="Contact.html">Contact Us</a></li>
-                    </ul>
+                        <li class="close"><span onclick="Hide()">×</span></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="recipesall.html">Recipe</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                        <li><a href="Contact_Form.html">Contact Us</a></li>
+                      </ul>
                 </div>
                 <!-- button is used with a reference link and is set with 3x size-->
                 <button id="hamButton" class="fa fa-bars fa-3x" onclick="showMenu()">
@@ -51,28 +51,29 @@
             <table>
                 <!--table row as tr, table data as td-->
                 <tr>
-                    <td><a href="home.html">Home</a></td>
+                    <td><a href="index.html">Home</a></td>
                 </tr>
                 <tr><td><hr></td></tr>
                 <tr>
-                    <td><a href="about.html">About</a></td>
+                    <td><a href="about-us.html">About</a></td>
                 </tr>
                 <tr><td><hr></td></tr>
                 <tr>
-                    <td><a href="Recipe.html">Recipe</a></td>
+                    <td><a href="recipesall.html">Recipe</a></td>
                 </tr>
                 <tr><td><hr></td></tr>
                 <tr>
-                    <td><a href="Chef.html">Chef</a></td>
+                    <td><a href="FAQs.html">FAQs</a></td>
                 </tr>
                 <tr><td><hr></td></tr>
                 <tr>
-                    <td><a href="Contact.html">Contact Us</a></td>
+                    <td><a href="Contact_Form.html">Contact Us</a></td>
                 </tr>
             </table>   
         </div>
         <!--body image is alloted using img src tag-->
         <img src="images/helina_images/mexican food background.jpg">
+        <h1 id="burrito">Burrito Bowl</h1>
         <!--onscrollevent is called by passing an id into it so it will redirect it to the js function-->
         <button class="btn1 tt1" onclick="scrollEvent('ingredientsCard1')">
             <img src="images/helina_images/ingredients.png">

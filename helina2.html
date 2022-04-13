@@ -29,12 +29,12 @@
           </div>
           <!--navigation bars are created using a tag-->
           <ul id="nav-lists">
-            <li class="close"><span>×</span></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="Recipe.html">Recipe</a></li>
-            <li><a href="Chef.html">Chef</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="recipesall.html">Recipe</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Contact_Form.html">Contact Us</a></li>
           </ul>
         </div>
         <!-- button is used with a reference link and is set with 3x size-->
@@ -51,7 +51,7 @@
       <table>
         <!--table row as tr, table data as td-->
         <tr>
-          <td><a href="home.html">Home</a></td>
+          <td><a href="index.html">Home</a></td>
         </tr>
         <tr>
           <td>
@@ -59,7 +59,7 @@
           </td>
         </tr>
         <tr>
-          <td><a href="about.html">About</a></td>
+          <td><a href="about-us.html">About</a></td>
         </tr>
         <tr>
           <td>
@@ -67,7 +67,7 @@
           </td>
         </tr>
         <tr>
-          <td><a href="Recipe.html">Recipe</a></td>
+          <td><a href="recipesall.html">Recipe</a></td>
         </tr>
         <tr>
           <td>
@@ -75,7 +75,7 @@
           </td>
         </tr>
         <tr>
-          <td><a href="Chef.html">Chef</a></td>
+          <td><a href="FAQs.html">FAQs</a></td>
         </tr>
         <tr>
           <td>
@@ -83,7 +83,7 @@
           </td>
         </tr>
         <tr>
-          <td><a href="Contact.html">Contact Us</a></td>
+          <td><a href="Contact_Form.html">Contact Us</a></td>
         </tr>
       </table>
     </div>
@@ -284,26 +284,42 @@
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <div class="form">
-    <h2>Want to add your recepie!!</h2>
-    <div id="error_message"></div>
-    <form id="myform" >
-      <div class="input_field">
-        <input type="text" placeholder="Name" id="name">
+  <div class="content-section">
+        
+    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+      <h2>Want to add your recepie!!</h2><br>
+      <div class="row">
+          <div class="row-group">
+            
+              <label class="label" for="name">First Name</label>
+              <input type="text" class="input-control" name="name" id="fname" placeholder="Enter FirstName">
+              <div class="error"></div>
+          </div>
+          <div class="row-group">
+              <label class="label" for="name">Last Name</label>
+              <input type="text" class="input-control" name="name" id="lname" placeholder="Enter LastName">
+              <div class="error"></div>
+          </div>
       </div>
-      <div class="input_field">
-        <input type="text" placeholder="Phone" id="phone">
+      <div class="row">
+          <div class="row-group">
+              <label class="label" for="email">Email Address</label>
+              <input type="text" class="input-control" name="email" id="email" placeholder="Enter Email">
+              <div class="error"></div>
+          </div>
+          <div class="row-group">
+              <label class="label" for="phone">Contact Number</label>
+              <input type="text" class="input-control" name="phone" id="phone" maxlength="10" placeholder="Enter ContactNumber">
+              <div class="error"></div>
+          </div>
       </div>
-      <div class="input_field">
-        <input type="text" placeholder="Email" id="email">
+      <div class="group">
+          <label class="label" for="#">Message</label>
+          <textarea name="message" class="input-control" id="message" cols="30" rows="4" placeholder="Enter Your Message"></textarea>
+          <div class="error"></div>
       </div>
-      <div class="input_field">
-        <textarea placeholder="Message" ></textarea>
-      </div>
-      <div class="btn">
-        <button  id ="submit" onclick="validate()">
-      </div>
-    </form>
+      <button type="submit">Send Message</button>                                
+  </form>
   </div>
 
   <footer>
