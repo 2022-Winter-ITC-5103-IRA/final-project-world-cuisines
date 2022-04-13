@@ -97,11 +97,17 @@ const validateInputs = () => {
     setError(phone, '[ContactNumber is required]');
     flag=0;
   } 
-  else if (phoneValue.length==10 && phoneValue.match(validnum)) {  //number should be 10 digits and no aplhaber allowed 
-    setSuccess(phone);
+  else if (phoneValue.length==10) {  //number should be 10 digits and no aplhaber allowed 
+    if(phoneValue.match(validnum)){
+      setSuccess(phone);
+    }
+    else{
+      setError(phone, '[Enter Number Only.]');
+      flag=0;
+    }
   }  
   else {   //number!=10 and aphabet present then display error message
-    setError(phone, '[Length 10 digits and Number Only.]');
+    setError(phone, '[10 digits Required]');
     flag=0;
   }
   //check message is not null and having minimum 40 characters.
