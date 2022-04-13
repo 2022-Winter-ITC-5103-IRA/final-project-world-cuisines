@@ -130,13 +130,20 @@ video{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-style: dotted;
   border-width: thick;
-  border-radius: 2px;
+  border-radius: 0px 0px 20px 20px;
   background-image: linear-gradient(pink,orange,yellow,white);
   text-align: center;
   height:400px;
   width:900px;
   float:right;
 }
+#dot{
+  border-top: 5px groove black;
+  border-bottom: 5px groove black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 #open,#closed{
   text-shadow: 2px 2px 5px red;
 }
@@ -275,6 +282,7 @@ video{
 
 .shop-item-image {
     height: 250px;
+    border-radius: 30px;
 }
 
 .shop-item-details {
@@ -293,7 +301,6 @@ video{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
@@ -627,15 +634,171 @@ footer {
     
 }
 
-@media screen and (max-width : 400px) and (-webkit-min-device-pixel-ratio: 2){
-    #mobile-view{
-        min-height: -webkit-fill-available;
-    }
-    #item-card{
-        height: 200px;
-        width: 140px;
-    }
-    #food-items{
-        padding: 0;
-    }
+@media  screen and (max-width: 655px) {
+  #hamburger-menu table td{
+      border-radius: 2px;
+  }
+  #hamButton{
+      margin-left: 32%; 
+      margin-top: -5px;
+      padding: 2px;
+      background-color: green;
+      display: block;
+  }
+
+  .container .navbar{
+      display: none;
+  }
+ 
+  #LeftSlider{
+      width: 100%;
+      background-color: rgba(184, 56, 56);
+      position: fixed;
+      z-index: 9;
+      display: none;
+  }
+  #LeftSlider Button{
+      margin-left: 550px;
+      margin-top: 30px;
+
+  }
+  #LeftSlider table{
+      margin-left: auto;
+      margin-right: auto;   
+      width: 80%; 
+  }
+  .content #LeftSlider tr td{
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  }
+  .content #LeftSlider tr{
+      width:100%;
+  }
+  .time{
+    margin-top: -5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dotted;
+    border-width: thick;
+    border-radius: 2px;
+    background-image: linear-gradient(pink,orange,yellow,white);
+    text-align: center;
+    height:400px;
+    width:640px;
+    float:right;
+  }
+}  
+
+
+@media  screen and (max-width: 435px){
+  #hamburger-menu table td{
+      border-radius: 2px;
+  }
+  #hamButton{
+      margin-left: 17%; 
+      margin-top: -5px;
+      padding: 2px;
+      background-color: green;
+      display: block;
+  }
+  
+  #LeftSlider{
+      width: 100%;
+      background-color: rgba(184, 56, 56);
+      position: fixed;
+      z-index: 9;
+      display: none;
+  }
+  #LeftSlider Button{
+      margin-left: 350px;
+      margin-top: 30px;
+
+  }
+  #LeftSlider table{
+      margin-left: auto;
+      margin-right: auto;   
+      width: 80%; 
+  }
+  .content #LeftSlider tr td{
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  }
+  .content #LeftSlider tr{
+      width:100%;
+  }
+  .time{
+    margin-top: -5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dotted;
+    border-width: thick;
+    border-radius: 2px;
+    background-image: linear-gradient(pink,orange,yellow,white);
+    text-align: center;
+    height:400px;
+    width:420px;
+    float:right;
+  }
 }
+  
+@media screen and (max-width:330px){
+  #hamburger-menu table td{
+      border-radius: 2px;
+  }
+  #hamButton{
+      
+      margin-left: 10%; 
+      margin-top: -5px;
+      padding: 2px;
+      background-color: green;
+      display: block;
+  }
+  #LeftSlider{
+      width: 100%;
+      background-color: rgba(184, 56, 56);
+      position: fixed;
+      z-index: 9;
+      display: none;
+  }
+  #LeftSlider Button{
+      margin-left: 10px;
+      margin-top: 30px;
+
+  }
+  #LeftSlider table{
+      margin-left: auto;
+      margin-right: auto;   
+      width: 80%; 
+  }
+  .content #LeftSlider tr td{
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  }
+  .content #LeftSlider tr{
+      width:100%;
+  }
+
+  footer .submit{
+      margin-top: 10px;
+      margin-left: 50px;
+  }
+.time{
+  margin-top: -5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: dotted;
+  border-width: thick;
+  border-radius: 2px;
+  background-image: linear-gradient(pink,orange,yellow,white);
+  text-align: center;
+  height:400px;
+  width:310px;
+  float:right;
+}
+
+}
+
+

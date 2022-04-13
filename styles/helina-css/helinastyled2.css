@@ -396,88 +396,10 @@ margin-top: -20px;
   margin-left:80px;
   width:600px;
   border-right:2px solid;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
-/* Form validation*/
-.form{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 350px;
-  width: 100%;
-  background: #fff;
-  padding: 25px;
-  border-radius: 5px;
-  border: solid;
-  
-  /* display: inline-block; */
-  /* box-shadow: 4px 4px 4px red;  */
-  /* margin-top: -100px;
-  margin-left: 1100px; */
-}
 
-.form h2{
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #332902;
-}
-
-.form .input_field{
-  margin-bottom: 10px;
-}
-
-.form .btn #submit{
-  border: 0px;
-  margin-top: 15px;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  background: red;
-  color: #332902;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  border-radius: 25px;
-}
-.form .input_field input[type="text"],
-.form textarea{
-  border: 1px solid #e0e0e0;
-  width: 100%;
-  padding: 10px;
-}
-
-.form textarea{
-  resize: none;
-  height: 80px;
-}
-
-.form .btn input[type="submit"]{
-  border: 0px;
-  margin-top: 15px;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  background: red;
-  color: #332902;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-#error_message{
-  margin-bottom: 20px;
-  background: #fe8b8e;
-  padding: 0px;
-  text-align: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
 
 /*hover over me*/
 .dropbtn {
@@ -820,68 +742,81 @@ footer .form-subscribe{
   }
 }
 
-.form{
-  /* position: relative; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 350px;
-  width: 100%;
-  background: #fff;
-  padding: 25px;
-  border-radius: 5px;
-  border: solid;
-  margin-top: 300px;
-  margin-left: 300px;
+/*Form validation style*/
+.contactForm{
+  width:70%;
+  border: 3px solid black;
+  box-shadow: 5px 10px 5px yellowgreen;
+  margin-left: 50px;
+  margin-top: -20px;
 }
-
-.form h2{
+.content-section{
+  padding: 40px 10px; 
+  flex-basis: 60%;
+}
+.contactForm h2{
   text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #332902;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: yellowgreen;
+  text-shadow: 2px 2px red;
 }
-
-.form .input_field{
-  margin-bottom: 10px;
+.content-section .row{
+  display: flex;  
+  justify-content: space-between; 
+  margin-bottom: 30px; 
+  font-family: monospace;
+  font-size: 20px;
 }
-
-.form .input_field input[type="text"],
-.form textarea{
-  border: 1px solid #e0e0e0;
-  width: 100%;
-  padding: 10px;
+.content-section .row .row-group{
+  flex-basis: 45%; 
+  
 }
-
-.form textarea{
-  resize: none;
-  height: 80px;
+.content-section form label{
+  font-weight: bold; 
+  display: block; 
+  margin-bottom: 6px;
 }
-
-.form .btn input[type="submit"]{
-  border: 0px;
-  margin-top: 15px;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  background: red;
-  color: #332902;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: bold;
-  border-radius: 25px;
+.content-section form input{
+  width: 100%; 
+  border: none; 
+  border-bottom: groove; 
+  background-color: #eee; 
+  padding-bottom: 5px; 
+  outline: none;  
+  height: 20px; 
+}
+.content-section form textarea{
+  width: 100%;  
+  border: 1px solid #ccc; 
+  outline: none;  
+  padding: 10px; 
+  box-sizing: border-box; 
+  background-color: #eee;  
+}
+.content-section form button{
+  background: red; 
+  color: #fff; 
+  border: none; 
+  outline: none; 
+  height: 50px; 
+  margin-top: 20px;
+  width: 100%; 
+  font-size: 1.2rem; 
   cursor: pointer;
 }
-
-#error_message{
-  margin-bottom: 20px;
-  background: #fe8b8e;
-  padding: 0px;
-  text-align: center;
-  font-size: 14px;
-  transition: all 0.5s ease;
+form .group{
+  font-family: monospace;
+  font-size: 20px;
 }
+.row-group .error,.group .error {
+color: #ff3860;  /*show error messahe in red color*/
+font-size: 13px;
+height: 13px;
+font-weight: bolder;
+}
+
+
+
 
   #LeftSlider{
       width: 100%;
