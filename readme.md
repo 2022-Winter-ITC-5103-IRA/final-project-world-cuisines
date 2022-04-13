@@ -7,9 +7,9 @@
 - To merge all the html, css, images and js files of all the team members
 - To add more javascript for practice
 - Helina Gandhi
-    - helina1
-    - helina2
-    - H_customize
+    - helina1(fixed header,scrollable button with js,)
+    - helina2(fixed header,popup function with js, scrollable button with js,image slider,form validation with js, map)
+    - H_customize(fixed header,add to cart with js,image animation,video)
     - helina_css(folder)
     - helina_js(folder)
 - Reemabahen Patel
