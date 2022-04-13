@@ -173,15 +173,16 @@ body{
     .tt2:hover .tooltiptext {
             visibility: visible;
     }
-    
+    #ingredientsCard2 #img{
+        width:900px;
+    }
     #innerCard2{
-        border: 10px solid transparent;
         padding: 15px;
-        border-image: url(images/helina_images/border_img.jpg) 30 stretch;  
         margin: 30px 30px 30px 300px;
         width:50%; 
-        
+        border-style: double;
     }
+ 
 
     /*side button 3 is given css over here*/
     .btn3 {

@@ -195,13 +195,11 @@ margin-top: -20px;
   }
   
   #innerCard2{
-      border: 10px solid transparent;
-      padding: 15px;
-      border-image: url("images/helina_images/border_img.jpg") 30 stretch;  
-      margin: 30px 30px 30px 300px;
-      width:50%; 
-      
-  }
+    padding: 15px;
+    margin: 30px 30px 30px 300px;
+    width:50%; 
+    border-style: double;
+}
 
   /*side button 3 is given css over here*/
   .btn3 {
@@ -403,7 +401,7 @@ margin-top: -20px;
 
 /* Form validation*/
 .form{
-  /* position: relative; */
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -416,8 +414,8 @@ margin-top: -20px;
   
   /* display: inline-block; */
   /* box-shadow: 4px 4px 4px red;  */
-  margin-top: -230px;
-  margin-left: 1100px;
+  /* margin-top: -100px;
+  margin-left: 1100px; */
 }
 
 .form h2{
