@@ -19,7 +19,6 @@
       <div class="logo">
         <a href="#"><img src="images/Reema_images/logo.jpeg" alt="logo"></a>
       </div>
-      <p id="demo"></p>
       <div class="navbar">
 
         <div class="icon-bar" onclick="Show()">
@@ -63,10 +62,10 @@
       <blink>Order Now</blink>
       <h4>Choose option from below:</h4>
       <div id="wrap2">
-      <button onclick="myF1()">Swiggy</button>
-      <button onclick="myF2()">Uber Eats</button>
-      <button onclick="myF3()">Door-dash</button>
-      <button onclick="myF4()">Skip the dishes</button>
+        <button onclick="myF1()">Swiggy</button>
+        <button onclick="myF2()">Uber Eats</button>
+        <button onclick="myF3()">Door-dash</button>
+        <button onclick="myF4()">Skip the dishes</button>
       </div>
 
     </nav>
@@ -79,7 +78,7 @@
 
       <div class="row">
         <div class="column">
-          <img src="images/Reema_images/1.salad.jpg"  onclick="myImages(this);">
+          <img src="images/Reema_images/1.salad.jpg" onclick="myImages(this);">
         </div>
         <div class="column">
           <img src="images/Reema_images/2.salad.jpg" onclick="myImages(this);">
@@ -93,7 +92,7 @@
       </div>
       <div class="cont">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg"  >
+        <img id="expandedImg">
         <div id="imgtext"></div>
       </div>
 
@@ -137,12 +136,12 @@
             turning at least once until the turkey is cooked through.
           </p>
         </div>
-      
+
         <div class="steps">
           <h2 class="myDIV">Step3</h2>
           <p class="hide">
             When you’re ready to serve, mix half the lettuce, watercress, half of the remaining onion and 1 of the
-            peppers  in a bowl.
+            peppers in a bowl.
             Top with half the potatoes, and slice and pile on half the turkey. Toss the avocado with a good squeeze of
             lime, then scatter half on top with half the grapes and half the walnuts.
             Spoon over half of the remaining dressing.
@@ -161,36 +160,42 @@
       <button onclick="ISPrint()">Print Ingredients and Steps</button>
     </article>
     <aside>
-      
-        <h3>Would you like to receive an alert for the new receipes like this? </h3>
-        <button class="open-button" onclick="openForm()">Yes</button>
-        
-        <div id="form-pop">
-          <form action="/action_page.php" id="form-container" name="myForm">
-            
-              <h1>Form</h1> 
-                
-                  <label for="name"><b>Name:</b></label>
-                  <input type="text" name="text" placeholder="Write your name here..." ><br/> <!--Input type password means it will be useful to hide our password at the time of typing it-->
-                  <p id="output1"></p>
-                  <label for="email"><b>E-mail:</b></label>
-                  <input type="email" name="e-mail" placeholder="Write your email..." ><br/> <!--input type email means it will expect something like email-->
-                  <p id="output1"></p>
-                  <label for="name"><b>Phone Number:</b></label>
-                  <input type="number" name="phone" placeholder="Write your Phone number..." ><br/>
-                  <p id="output1"></p>
-                  <button type="submit" class="btn" onclick="sub()">Submit</button>
-                  <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
-          </form>
-        </div>
-        
-        
-        
-        <!--<input type="checkbox" onclick="myForm()" id="check"> Yes, I will -->
-        <h3>Review:</h3>
-        <!--textarea is used to give some space to the user to enter some text-->
-        <textarea name="comments"></textarea></br>
-        <input type="Submit" name="Post Review" id="review" onclick="abc()">
+
+      <h3>Would you like to receive an alert for the new receipes like this? </h3>
+      <button class="open-button" onclick="openForm()">Yes</button>
+
+      <div id="form-pop">
+        <form id="form-container" name="myForm">
+
+          <h1>Form</h1>
+
+          <label for="name"><b>Name:</b></label> 
+          <p id="output1"></p>
+          <input type="text" id="text" placeholder="Write your name here..."><br />
+          <!--Input type password means it will be useful to hide our password at the time of typing it-->
+          
+          <label for="email"><b>E-mail:</b></label>
+          <p id="output2"></p>
+          <input type="email" name="email" id="e-mail" placeholder="Write your email..." ><br />
+          <!--input type email means it will expect something like email-->
+          <p id="output"></p>
+          
+          <label for="name"><b>Phone Number:</b></label>
+          <p id="output3"></p>
+          <input type="number" name="phone" id="phone" placeholder="Write your Phone number..."><br />
+         
+          <button type="button" class="btn" onclick="validate(document.myForm.email)">Submit</button>
+          <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+
+
+      <!--<input type="checkbox" onclick="myForm()" id="check"> Yes, I will -->
+      <h3>Review:</h3>
+      <!--textarea is used to give some space to the user to enter some text-->
+      <textarea name="comments"></textarea></br>
+      <input type="Submit" name="Post Review" id="review" onclick="abc()">
 
     </aside>
   </div>
@@ -209,7 +214,7 @@
           <li><a href="about-us.html">About</a></li>
           <li><a href="recipesall.html">Recipe</a></li>
           <li><a href="FAQs.html">FAQs</a></li>
-          <li><a href="Contact_Form.html">Contact Us</a></li>          
+          <li><a href="Contact_Form.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="address">
@@ -237,6 +242,9 @@
   </footer>
   <script src="js/Reema_js/app.js"></script>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    
+  </script>
 </body>
 
 </html>
