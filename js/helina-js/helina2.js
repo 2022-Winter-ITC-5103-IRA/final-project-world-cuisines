@@ -53,15 +53,15 @@ const msg = document.getElementById('message');
 
 //checking validation
 form.addEventListener('submit', e => {
-  e.preventDefault(); // prevent the form from submitting automatically
-  validateInputs(); //validate the inputs and we can submit the form after every check succeed 
+  e.preventDefault(); 
+  validateInputs();  
 });
-//two functions set the error or success states of the each of the input controls
+
 const setError = (element, message) => {
-  const inputControl = element.parentElement; //getting parentelement
+  const inputControl = element.parentElement; 
   const errorDisplay = inputControl.querySelector('.error'); 
 
-  errorDisplay.innerText = message; //display error in div container
+  errorDisplay.innerText = message; 
   inputControl.classList.add('error'); //add on error
   inputControl.classList.remove('success'); //remove on success
 }
@@ -70,7 +70,7 @@ const setSuccess = element => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector('.error');
 
-  errorDisplay.innerText = ''; //display nothing once success
+  errorDisplay.innerText = ''; 
   inputControl.classList.add('success'); 
   inputControl.classList.remove('error');
 }
@@ -82,7 +82,7 @@ const isValidEmail = email => {
 }
 //validation function
 const validateInputs = () => {
-  const fnameValue = fname.value.trim(); //trim remove whitespace
+  const fnameValue = fname.value.trim(); 
   const lnameValue = lname.value.trim();
   const emailValue = email.value.trim();
   const phoneValue = phone.value.trim();
@@ -124,14 +124,17 @@ const validateInputs = () => {
     setSuccess(email);
   }
   //check phone length must be 10.
-  if(phoneValue === '') {           //if null then display error message
+  if(phoneValue === '') {         
+    //if null then display error message
     setError(phone, '[ContactNumber is required]');
     loop=false;
   } 
-  else if (phoneValue.length==10 && phoneValue.match(validnum)) {  //number should be 10 digits and no aplhaber allowed 
+  else if (phoneValue.length==10 && phoneValue.match(validnum)) {  
+    //number should be 10 digits and no aplhaber allowed 
     setSuccess(phone);
   }  
-  else {   //number!=10 and aphabet present then display error message
+  else {   
+    //number!=10 and aphabet present then display error message
     setError(phone, '[Length 10 digits and Number Only.]');
     loop=false;
   }
@@ -140,10 +143,12 @@ const validateInputs = () => {
     setError(msg, '[Message cannot be empty]');
     loop=false;
   } 
-  else if (msgValue.length>40) {     //Need more than 40 character
+  else if (msgValue.length>40) {     
+    //Need more than 40 character
     setSuccess(msg);
   }  
-  else {   //display error message if not more than 40 character
+  else {   
+    //display error message if not more than 40 character
     setError(msg,'[Minimum 40 character]');
     loop=false;
   }
