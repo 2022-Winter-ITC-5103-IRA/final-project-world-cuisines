@@ -136,11 +136,56 @@ function myImages(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 
-
-function sub()
+function validateE(email)
 {
-  alert("Thank you for submitting");
+  var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  if (email.value.match(mailformat)) {
+    return true;
+  }
+  else {
+    document.getElementById("output").innerHTML = "Invalid email address";
+    document.form1.text1.focus();
+    return false;
+  }
 }
+
+
+
+function validate(email)
+{
+    var x = document.forms["myForm"]["text"].value;
+    var y = document.forms["myForm"]["e-mail"].value;
+    var z = document.forms["myForm"]["phone"].value;
+    
+    // alert("out");
+    if (x == "") {
+      // alert("in");
+      document.getElementById("output1").innerHTML = "please enter name";
+      // document.getElementById("output1").style.display="block";
+      // alert("inner");
+    }else if(y == ""){
+      document.getElementById("output1").innerHTML = "";
+      document.getElementById("output2").innerHTML = "please enter email";
+    }
+  else if(z == ""){
+    document.getElementById("output2").innerHTML = "";
+    document.getElementById("output3").innerHTML = "please enter phone";
+  }
+  else
+  {
+    document.getElementById("output3").innerHTML = "";
+    validateE(email);
+    alert("Thank you for submitting");
+    closeForm();
+    document.getElementById("text").value = "";
+    document.getElementById("e-mail").value = "";
+    document.getElementById("phone").value = "";
+    document.form1.text1.blur();
+  }
+    return "";
+}
+
+
 
 function abc()
 {
@@ -148,5 +193,6 @@ function abc()
 }
 
 
-  const d = new Date();
-document.getElementById("demo").innerHTML = d;
+
+
+
