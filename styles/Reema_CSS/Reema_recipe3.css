@@ -193,7 +193,24 @@ body
     height: 30%;
     margin: 0px 300px;
 }
+#output
+{
+    color: red;
+    margin-top: 0px;
+}
 
+#output1, #output2
+{
+    color: red;
+    margin-top: -19px;
+    margin-left: 60px;
+}
+#output3
+{
+    color: red;
+    margin-top: -19px;
+    margin-left: 120px;
+}
 #main
 {
    display: flex;
