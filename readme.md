@@ -19,9 +19,9 @@
     - Reema_CSS(folder)
     - Reema_js(folder)
 - Darshankumar Patel
-    - Contact_Form
-    - Lasagna
-    - Malai_Kofta
+    - Contact_Form(Validation USING javascript) (js/Darshan-js/Contact_Form.js)
+    - Lasagna (Implement Calorie Calculator.Validation and calculating result using javascript) (js/Darshan-js/Lasagna.js)
+    - Malai_Kofta (Implement rating recipe with edit option and image slider to move image using javascript) (js/Darshan-js/Malai-Kofta.js)
 - Vishesh Makwana
     - home
     - about us
