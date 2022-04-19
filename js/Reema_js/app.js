@@ -112,10 +112,10 @@ function myF1() {
 function myF2() {
   window.open("https://www.ubereats.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
 }
-function myF1() {
+function myF3() {
   window.open("https://www.doordash.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
 }
-function myF1() {
+function myF4() {
   window.open("https://www.skipthedishes.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=700px,height=700px,left=600px,top=125px");
 }
 
