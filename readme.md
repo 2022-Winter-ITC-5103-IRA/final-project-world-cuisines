@@ -8,6 +8,7 @@
 - To add more javascript for practice
 - Helina Gandhi
     - helina1(fixed header,scrollable button with js, image resize on hover,current date and time with js)
+    - URL:https://github.com/2022-Winter-ITC-5103-IRA/final-project-world-cuisines/blob/main/helina1.html
     - helina2(fixed header,popup function with js, scrollable button with js,image slider,form validation with js, map)
     - H_customize(fixed header,add to cart with js,image animation,video)
     - helina_css(folder)
