@@ -30,13 +30,13 @@
 - Kaiyan Chen 
     - recipe1: breakfast-burrito 
     - JS:slide show, dynamic content(user can submit comment and show on page)
-    - URL:
+    - URL: https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/recipe1_Kaiyan.html
     - recipe2: breakfast-skillet
     - JS:slide show, register form validation
-    - URL: 
+    - URL: https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/recipe2_Kaiyan.html
     - recipe3: Spinach & Egg Skillet
     - JS: slide show with Jquery (click to show picture), accordion with Jquery
-    - URL: 
+    - URL: https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/recipe3_Kaiyan.html
 - Nahom Kahssay
     - et_coffee
     - Tej
