@@ -16,9 +16,9 @@
     - helina_css(folder)
     - helina_js(folder)
 - Reemabahen Patel
-    - Reema_recipe1 : MINT & BASIL GRIDDLED PEACH SALAD
-    - Reema_recipe1 : GREEN SALAD WITH CHERRIES
-    - Reema_recipe1 : TURKEY SALAD WITH GRAPES AND WALNUTS
+    - Reema_recipe1 : MINT & BASIL GRIDDLED PEACH SALAD (https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Reema_recipe1.html)
+    - Reema_recipe1 : GREEN SALAD WITH CHERRIES (https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Reema_recipe2.html)
+    - Reema_recipe1 : TURKEY SALAD WITH GRAPES AND WALNUTS(https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Reema_recipe3.html)
     - Reema_CSS(folder)
     - Reema_js(folder)
 - Darshankumar Patel
