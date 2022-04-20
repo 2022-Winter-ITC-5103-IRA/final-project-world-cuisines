@@ -30,9 +30,13 @@
     - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Malai_Kofta.html
 - Vishesh Makwana
     - home (Mobile view navigation, Design of header and foooter, Slider using JS, Cards with Hover animation, Form validaton using Javascript)
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/index.html
     - about us- Details of Team members with images and their backgrounds.
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/about-us.html
     - FAQs- Toggles for each question on Faqs page and also a form with onKeyup validation using JS
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/FAQs.html
     - recipes- Lists all the pages created by rest of the team members, which are recipe pages.
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/recipesall.html
 - Kaiyan Chen 
     - recipe1: breakfast-burrito 
     - JS:slide show, dynamic content(user can submit comment and show on page)
