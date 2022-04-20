@@ -3,7 +3,7 @@ let myImagesArray = ["images/Darshan-Images/FinalKofta.jpg","images/Darshan-Imag
                     "images/Darshan-Images/Kofta4.jpg","images/Darshan-Images/Paste1.jpg","images/Darshan-Images/Paste2.jpg","images/Darshan-Images/Paste3.jpg"];
 
 // Responsive Navigation Hamburgur Menu with show and hide function
-var navList = document.getElementById("nav-lists");
+let navList = document.getElementById("nav-lists");
 function Show() {
   navList.classList.add("_Menus-show");  //Show Menu on click
 }
@@ -11,7 +11,7 @@ function Hide() {
   navList.classList.remove("_Menus-show");  //Hide Menu on click
 }
 
-var i = myImagesArray.length; //calculate array length
+let i = myImagesArray.length; //calculate array length
 // function for next slide 
 function nextImage(){
   if (i<myImagesArray.length) {
@@ -19,7 +19,7 @@ function nextImage(){
   }else{
       i = 1;
   }
-  document.getElementById('ControlImage').src=myImagesArray[i-1]; //move to next image on clicking arrow(>)
+  document.getElementById('ControlImage').src=myImagesArray[i+1]; //move to next image on clicking arrow(>)
 }
 // function for prew slide
 function prewImage(){
