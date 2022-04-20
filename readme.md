@@ -26,10 +26,10 @@
     - Lasagna (Implement Calorie Calculator.Validation and calculating result using javascript) (js/Darshan-js/Lasagna.js)
     - Malai_Kofta (Implement rating recipe with edit option and image slider to move image using javascript) (js/Darshan-js/Malai-Kofta.js)
 - Vishesh Makwana
-    - home
-    - about us
-    - FAQs
-    - recipes
+    - home (Mobile view navigation, Design of header and foooter, Slider using JS, Cards with Hover animation, Form validaton using Javascript)
+    - about us- Details of Team members with images and their backgrounds.
+    - FAQs- Toggles for each question on Faqs page and also a form with onKeyup validation using JS
+    - recipes- Lists all the pages created by rest of the team members, which are recipe pages.
 - Kaiyan Chen 
     - recipe1: breakfast-burrito 
     - JS:slide show, dynamic content(user can submit comment and show on page)
