@@ -5,7 +5,7 @@ function saveToFile(){
     const date = document.getElementById('date');
     
 
-    var data = "Full Name : " + fullName.value + "\n" + 
+    let data = "Full Name : " + fullName.value + "\n" + 
                 "Email : " + email.value + "\n" + 
                 "Telephone : " + telphone.value + "\n" + 
                 "Date : " + date.value + "\n";
