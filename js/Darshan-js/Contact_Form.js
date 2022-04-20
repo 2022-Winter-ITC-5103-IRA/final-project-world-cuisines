@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
   validateInputs(); //validate the inputs and we can submit the form after every check succeed 
 });
 //two functions set the error or success states of the each of the input controls
-const setError = (element, message) => {
+function setError(element, message) {
   const inputControl = element.parentElement; //getting parentelement
   const errorDisplay = inputControl.querySelector('.error'); 
 
@@ -23,7 +23,7 @@ const setError = (element, message) => {
   setTimeout(function(){errorDisplay.innerText = '';},2000); //displaying error for 2 seconds
 }
 /*Opposite function of setError */
-const setSuccess = element => {
+function setSuccess (element) {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector('.error');
 
@@ -144,7 +144,6 @@ function Hide() {
 }
 
 
-
 /*
 Example of valid email id
 mysite@ourearth.com
@@ -185,15 +184,6 @@ w- = match any word or a literal –
 * = another 0 to infinity quantifier
 w+ = match a word at least once
 [w-]*. = match a word or a dash at least zero times, followed by a literal dot(.)before extension name
-
-
-() = another group
-[a-z]{2,4} = match lowercase letters at least 2 times but no more than 4 times
-| = “or” (does not match pipe)
-d+ = match at least 1 digit
-$ = the end of the string
-/ = end an expression
-i = test the string in a case insensitive manner
 
 
 */
