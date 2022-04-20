@@ -1,10 +1,10 @@
-const form = document.getElementById('contactForm');  //access form
+let form = document.getElementById('contactForm');  //access form
 //accessing each field in form using variables
-const fname = document.getElementById('fname');
-const lname = document.getElementById('lname');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const msg = document.getElementById('message');
+let fname = document.getElementById('fname');
+let lname = document.getElementById('lname');
+let email = document.getElementById('email');
+let phone = document.getElementById('phone');
+let msg = document.getElementById('message');
 
 //checking validation
 form.addEventListener('submit', e => {
@@ -13,8 +13,8 @@ form.addEventListener('submit', e => {
 });
 //two functions set the error or success states of the each of the input controls
 function setError(element, message) {
-  const inputControl = element.parentElement; //getting parentelement
-  const errorDisplay = inputControl.querySelector('.error'); 
+  let inputControl = element.parentElement; //getting parentelement
+  let errorDisplay = inputControl.querySelector('.error'); 
 
   errorDisplay.innerText = message; //display error in div container
   inputControl.classList.add('error'); //add on error
@@ -24,8 +24,8 @@ function setError(element, message) {
 }
 /*Opposite function of setError */
 function setSuccess (element) {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
+  let inputControl = element.parentElement;
+  let errorDisplay = inputControl.querySelector('.error');
 
   errorDisplay.innerText = ''; //display nothing once success
   inputControl.classList.add('success'); 
@@ -33,17 +33,17 @@ function setSuccess (element) {
 }
 
 //Email Regular Expression Function
-const isValidEmail = email => {
-  const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+let isValidEmail = email => {
+  let re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   return re.test(String(email).toLowerCase());
 }
 //validation function
-const validateInputs = () => {
-  const fnameValue = fname.value.trim(); //trim remove whitespace
-  const lnameValue = lname.value.trim();
-  const emailValue = email.value.trim();
-  const phoneValue = phone.value.trim();
-  const msgValue = msg.value.trim();
+let validateInputs = () => {
+  let fnameValue = fname.value.trim(); //trim remove whitespace
+  let lnameValue = lname.value.trim();
+  let emailValue = email.value.trim();
+  let phoneValue = phone.value.trim();
+  let msgValue = msg.value.trim();
   var flag=1,letters = /^[A-Za-z]+$/,validnum=/^\d{10}$/; //regex for fname,lname and ContactNUmber //flag 1 means TRUE
 
   //check firstname
