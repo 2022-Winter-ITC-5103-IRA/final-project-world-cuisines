@@ -193,13 +193,14 @@
       <section id="contact">
         <div class="contact-container">
           <div class="contact-img">
-            <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            <img src="./images/Vishesh-images/contact.png" alt="" />
           </div>
 
           <div class="form-container">
             <h2>Contact Us</h2>
             <input type="text" placeholder="First and Last Name" name="name" id="name_input" required
               onkeyup='validateName()'>
+
             <span class='error-message' id='name-error'></span>
             <label for="email"></label>
             <input type="email" placeholder="My e-mail is" name="email" id="email_input" required
@@ -260,7 +261,7 @@
       </div>
     </footer>
     <script>
-      var navList = document.getElementById("nav-lists");
+      let navList = document.getElementById("nav-lists");
       function Show() {
         navList.classList.add("_Menus-show");
       }
@@ -270,7 +271,7 @@
       }
     </script>
     <script>
-      var slideIndex = 1;
+      let slideIndex = 1;
       showSlides(slideIndex);
 
       function plusSlides(n) {
@@ -282,18 +283,24 @@
       }
 
       function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
         if (n > slides.length) { slideIndex = 1 }
+
         if (n < 1) { slideIndex = slides.length }
+
         for (i = 0; i < slides.length; i++) {
+
           slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
+
           dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
+
         dots[slideIndex - 1].className += " active";
       }
     </script>
@@ -302,7 +309,7 @@
     <script type="text/javascript">
       function validateName() {
 
-        var name = document.getElementById('name_input').value;
+        let name = document.getElementById('name_input').value;
 
         if (name.length == 0) {
 
@@ -325,7 +332,7 @@
 
       function validateEmail() {
 
-        var email = document.getElementById('email_input').value;
+        let email = document.getElementById('email_input').value;
 
         if (email.length == 0) {
 
@@ -347,9 +354,9 @@
       }
 
       function validateMessage() {
-        var message = document.getElementById('message_input').value;
-        var required = 30;
-        var left = required - message.length;
+        let message = document.getElementById('message_input').value;
+        let required = 30;
+        let left = required - message.length;
 
         if (left > 0) {
           producePrompt(left + ' more characters required', 'message-error', 'red');
