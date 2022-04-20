@@ -131,7 +131,6 @@ body
    flex-direction: column;
    margin: 0;
    font-size: large;
-
 }
 /* The grid: Four equal columns that floats next to each other */
 .column 
