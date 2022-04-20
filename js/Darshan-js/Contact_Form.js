@@ -34,7 +34,7 @@ const setSuccess = element => {
 
 //Email Regular Expression Function
 const isValidEmail = email => {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   return re.test(String(email).toLowerCase());
 }
 //validation function
@@ -161,3 +161,39 @@ mysite@.org.org [ tld can not start with dot "." ]
 mysite()*@gmail.com [ here the regular expression only allows character, digit, underscore, and dash ]
 mysite..1234@yahoo.com [double dots are not allowed]
  */
+
+
+/*Regex RE symbol use
+
+/ = Begin an expression
+^ = The matched string must begin here, and only begin here
+w = any word (letters, digits, underscores)
++ = match previous expression at least once, unlimited number of times
+[] = match any character inside the brackets, but only match one
++. = match a literal + or .
+w = another word
+– = match a literal –
+* = match the previous expression zero or infinite times
+@ = match a literal @ symbol(@ before domain name) 
+
+
+() = make everything inside the parentheses a group (and make them referencable)
+[] = another character set
+w- = match any word or a literal –
++ = another 1 to infinity quantifier
+. = match another literal
+* = another 0 to infinity quantifier
+w+ = match a word at least once
+[w-]*. = match a word or a dash at least zero times, followed by a literal dot(.)before extension name
+
+
+() = another group
+[a-z]{2,4} = match lowercase letters at least 2 times but no more than 4 times
+| = “or” (does not match pipe)
+d+ = match at least 1 digit
+$ = the end of the string
+/ = end an expression
+i = test the string in a case insensitive manner
+
+
+*/
