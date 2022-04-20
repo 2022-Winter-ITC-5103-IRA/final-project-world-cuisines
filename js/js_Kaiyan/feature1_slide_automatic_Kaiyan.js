@@ -30,7 +30,7 @@ function ChangeImages(direction)
     }
 
 
-
+//dynamic content
 let comments = ["This looks so good, can't wait to try it!", "It only takes me 15 minutes, easy for breakfast!", "Super loooooove!!!"];
 
 display = () => {

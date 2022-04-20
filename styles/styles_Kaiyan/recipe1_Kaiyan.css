@@ -114,7 +114,6 @@ header{
 /*main*/
 .main{
   display:grid;
-  /* height:2000px; */
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(10, 1fr);
 }
@@ -129,7 +128,7 @@ header{
 .title img{
   width: 1000px;
   height: 540px;
-  object-fit: none;
+  object-fit: cover;
   text-align: center;
 }
 
@@ -196,30 +195,7 @@ button{
   text-align: center;
 }
 
-/* #step h2 {
-  font-size: 120%;
-  padding: .25em 0 .25em 25px;
-  cursor: pointer;
-  background:rgb(51, 109, 133) no-repeat left center;
-}
-#step h2.minus {
-  background:#ff8800 no-repeat left center;
-}
 
-#step a {
-  color: black;
-  text-decoration: none; 
-}
-#step a:focus, a:hover { 
-color: grey; 
-}
-
-#step div {
-  display: none;
-}
-#step div.open {
-  display: block;
-} */
 
 /* start of footer styling */
 footer {
