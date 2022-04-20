@@ -22,9 +22,12 @@
     - Reema_CSS(folder)
     - Reema_js(folder)
 - Darshankumar Patel
-    - Contact_Form(Validation USING javascript) (js/Darshan-js/Contact_Form.js)
+    - Contact_Form(Validation USING javascript) (js/Darshan-js/Contact_Form.js) (CSS URL :- https://github.com/2022-Winter-ITC-5103-IRA/final-project-world-cuisines/blob/main/styles/Darshan-CSS/Contact_Form.css)
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Contact_Form.html
     - Lasagna (Implement Calorie Calculator.Validation and calculating result using javascript) (js/Darshan-js/Lasagna.js)
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Lasagna.html
     - Malai_Kofta (Implement rating recipe with edit option and image slider to move image using javascript) (js/Darshan-js/Malai-Kofta.js)
+    - URL :- https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Malai_Kofta.html
 - Vishesh Makwana
     - home (Mobile view navigation, Design of header and foooter, Slider using JS, Cards with Hover animation, Form validaton using Javascript)
     - about us- Details of Team members with images and their backgrounds.
