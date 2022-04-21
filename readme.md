@@ -50,10 +50,10 @@
 - Nahom Kahssay
     - et_coffee: Brewing Ethiopian Coffee
     - JS: slideshow for pictures and dropdown to get more tips
-    - URL: https://github.com/2022-Winter-ITC-5103-IRA/final-project-world-cuisines/blob/main/et_coffee.html
+    - URL: https://kaiyan-chen.github.io/World-Cuisines/et_coffee.html
     - Tej: Making Traditional Ethiopian Tej
     - JS: Pop out during click
-    - URL: https://github.com/2022-Winter-ITC-5103-IRA/final-project-world-cuisines/blob/main/Tej.html
+    - URL: https://kaiyan-chen.github.io/World-Cuisines/Tej.html
     - Tibbs: Cooking Tibbs
     - JS: Form for Registration
     - URL:https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Tibbs.html
