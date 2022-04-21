@@ -56,7 +56,7 @@
     - URL: https://github.com/2022-Winter-ITC-5103-IRA/final-project-world-cuisines/blob/main/Tej.html
     - Tibbs: Cooking Tibbs
     - JS: Form for Registration
-    - URL:https://github.com/2022-Winter-ITC-5103-IRA/final-project-world-cuisines/blob/main/Tibbs.html
+    - URL:https://2022-winter-itc-5103-ira.github.io/final-project-world-cuisines/Tibbs.html
 
 ## Leaning curve and challenges
 
